@@ -8,6 +8,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style type="text/css">
+  body{
+  	padding-top: 70px;
+  }
   .gi-2x{font-size: 1.5em;}
   .gi-3x{font-size: 3em;}
   .gi-4x{font-size: 4em;}
@@ -15,20 +18,59 @@
   </style>
   <script>
   $(document).ready(function(){
-    $("#active").click();
   });
   function publicaciones() {
-    document.getElementById("element").innerHTML = '<div class="col-sm-4"><h3>Column 1</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p><p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p></div><div class="col-sm-4"><h3>Column 2</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p><p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p></div><div class="col-sm-4"><h3>Column 3</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p><p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p></div>';
+    document.getElementById("element").innerHTML = `
+    <div class="row">
+    <div class="col-sm-4">
+    <h3>Column 1</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p></div>
+    <div class="col-sm-4">
+    <h3>Column 2</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class="col-sm-4">
+    <h3>Column 3</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    </div>`;
   }
   function seguidores() {
-    document.getElementById("element").innerHTML = "2";
+    document.getElementById("element").innerHTML = `
+    <div class="row">
+    <a href="#">
+    <div class="col-sm-1 col-md-1 ima">
+    <img src="https://scontent-mad1-1.cdninstagram.com/t51.2885-19/s150x150/16906849_105390733475092_7640936403735412736_a.jpg" width= "30px" height= "30px">
+    </div>
+    <div class="col-sm-11 col-md-11 main">
+    <p><b>Pablo</b></p>
+    <p>pabloalvarez</p>
+    </div>
+    </a>
+    </div>
+    <div class="row">
+    <a href="#">
+    <div class="col-sm-1 col-md-1 ima">
+    <img src="https://scontent-mad1-1.cdninstagram.com/t51.2885-19/s150x150/16906849_105390733475092_7640936403735412736_a.jpg" width= "30px" height= "30px">
+    </div>
+    <div class="col-sm-11 col-md-11 main">
+    <p><b>Pablo</b></p>
+    <p>pabloalvarez</p>
+    </div>
+    </a>
+    </div>
+    `;
   }
   function siguiendo() {
-    document.getElementById("element").innerHTML = "3";
+    document.getElementById("element").innerHTML = `3`;
   }
   </script>
 </head>
 <body>
+<?php include_once('../Navbar/index.html'); ?>
   <div class="container">
     <div class="row">
       <div class="col-sm-2 col-md-2 ima">
@@ -61,21 +103,23 @@
       </div>
     </div>
 
-    <div id = "element" class="row">
-      <div class="col-sm-4">
-        <h3>Column 1</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-      </div>
-      <div class="col-sm-4">
-        <h3>Column 2</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-      </div>
-      <div class="col-sm-4">
-        <h3>Column 3</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    <div id = "element">
+      <div class="row">
+        <div class="col-sm-4">
+          <h3>Column 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+        </div>
+        <div class="col-sm-4">
+          <h3>Column 2</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+        </div>
+        <div class="col-sm-4">
+          <h3>Column 3</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+        </div>
       </div>
     </div>
   </div>
