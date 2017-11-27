@@ -7,6 +7,26 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style type="text/css">
+  .gi-2x{font-size: 1.5em;}
+  .gi-3x{font-size: 3em;}
+  .gi-4x{font-size: 4em;}
+  .gi-5x{font-size: 5em;}
+  </style>
+  <script>
+  $(document).ready(function(){
+    $("#active").click();
+  });
+  function publicaciones() {
+    document.getElementById("element").innerHTML = '<div class="col-sm-4"><h3>Column 1</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p><p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p></div><div class="col-sm-4"><h3>Column 2</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p><p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p></div><div class="col-sm-4"><h3>Column 3</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p><p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p></div>';
+  }
+  function seguidores() {
+    document.getElementById("element").innerHTML = "2";
+  }
+  function siguiendo() {
+    document.getElementById("element").innerHTML = "3";
+  }
+  </script>
 </head>
 <body>
   <div class="container">
@@ -20,30 +40,28 @@
         <nav class="navbar navbar-default" role="navigation">
           <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="#"><span class="badge">32</span>Publicaciones</a></li>
-              <li><a href="#"><span class="badge">167</span>Seguidores</a></li>
-              <li><a href="#"><span class="badge">309</span>Siguiendo</a></li>
+              <li class="active"><a href="#" onclick="publicaciones()"><span class="badge">32</span>Publicaciones</a></li>
+              <li><a href="#" onclick="seguidores()"><span class="badge">167</span>Seguidores</a></li>
+              <li><a href="#" onclick="siguiendo()"><span class="badge">309</span>Siguiendo</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-cog"></span><b class="caret"></b></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-cog gi-2x"></span><b class="caret gi-2x"></b></a>
                 <ul class="dropdown-menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
+                  <li><a href="#">Editar Perfil</a></li>
+                  <li><a href="#">Suscripción Correo</a></li>
+                  <li><a href="#">Cambiar Contraseña</a></li>
                   <li class="divider"></li>
-                  <li><a href="#">Separated link</a></li>
+                  <li><a href="#">Cerrar sesión</a></li>
                 </ul>
               </li>
             </ul>
-          </div><!-- /.navbar-collapse -->
+          </div>
         </nav>
       </div>
     </div>
 
-
-
-    <div class="row">
+    <div id = "element" class="row">
       <div class="col-sm-4">
         <h3>Column 1</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
