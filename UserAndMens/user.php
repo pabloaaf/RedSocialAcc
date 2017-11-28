@@ -7,17 +7,9 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style type="text/css">
-  body{
-  	padding-top: 70px;
-  }
-  .gi-2x{font-size: 1.5em;}
-  .gi-3x{font-size: 3em;}
-  .gi-4x{font-size: 4em;}
-  .gi-5x{font-size: 5em;}
-  </style>
   <script>
   $(document).ready(function(){
+    document.getElementById("nombre").className+="active";
   });
   function publicaciones() {
     document.getElementById("element").innerHTML = `
@@ -79,7 +71,7 @@
       <div class="col-sm-10 col-md-10 main">
         <h1>User Name</h1>
         <p>Texto descripcion del usuario</p>
-        <nav class="navbar navbar-default" role="navigation">
+        <nav class="navbar" role="navigation">
           <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
               <li class="active"><a href="#" onclick="publicaciones()"><span class="badge">32</span>Publicaciones</a></li>
