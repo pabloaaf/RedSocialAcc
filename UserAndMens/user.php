@@ -35,29 +35,79 @@
     <div class="row">
     <a href="#">
     <div class="col-sm-1 col-md-1 ima">
-    <img src="https://scontent-mad1-1.cdninstagram.com/t51.2885-19/s150x150/16906849_105390733475092_7640936403735412736_a.jpg" width= "30px" height= "30px">
+    <img src="https://scontent-mad1-1.cdninstagram.com/t51.2885-19/s150x150/16906849_105390733475092_7640936403735412736_a.jpg" class="img-circle" width= "50px" height= "50px">
     </div>
     <div class="col-sm-11 col-md-11 main">
     <p><b>Pablo</b></p>
-    <p>pabloalvarez</p>
+    <p>@pabloalvarez</p>
     </div>
     </a>
     </div>
+
     <div class="row">
     <a href="#">
     <div class="col-sm-1 col-md-1 ima">
-    <img src="https://scontent-mad1-1.cdninstagram.com/t51.2885-19/s150x150/16906849_105390733475092_7640936403735412736_a.jpg" width= "30px" height= "30px">
+    <img src="https://pbs.twimg.com/profile_images/757924077629743105/D-8v_kZh.jpg" class="img-circle" width= "50px" height= "50px">
     </div>
     <div class="col-sm-11 col-md-11 main">
-    <p><b>Pablo</b></p>
-    <p>pabloalvarez</p>
+    <p><b>Juan</b></p>
+    <p>@juanito</p>
+    </div>
+    </a>
+    </div>
+
+    <div class="row">
+    <a href="#">
+    <div class="col-sm-1 col-md-1 ima">
+    <img src="https://morellobookings.com/wp-content/uploads/2017/08/John-Wood-Jan-14-JOHN-WOOD-HEAD-Jan14_2014_1001.jpg" class="img-circle" width= "50px" height= "50px">
+    </div>
+    <div class="col-sm-11 col-md-11 main">
+    <p><b>John</b></p>
+    <p>@john</p>
+    </div>
+    </a>
+    </div>
+
+
+    <div class="row">
+    <a href="#">
+    <div class="col-sm-1 col-md-1 ima">
+    <img src="https://image.freepik.com/foto-gratis/chica-posando-con-gafas-de-sol_1153-1985.jpg" class="img-circle" width= "50px" height= "50px">
+    </div>
+    <div class="col-sm-11 col-md-11 main">
+    <p><b>María</b></p>
+    <p>@mariaaa</p>
     </div>
     </a>
     </div>
     `;
   }
   function siguiendo() {
-    document.getElementById("element").innerHTML = `3`;
+    document.getElementById("element").innerHTML = `
+    <div class="row">
+    <a href="#">
+    <div class="col-sm-1 col-md-1 ima">
+    <img src="https://i.axs.com/2016/07/promoted-media-optimized_5776cc52b3816.jpg" class="img-circle" width= "50px" height= "50px">
+    </div>
+    <div class="col-sm-11 col-md-11 main">
+    <p><b>Justin Bieber</b></p>
+    <p>@justinBieber</p>
+    </div>
+    </a>
+    </div>
+
+    <div class="row">
+    <a href="#">
+    <div class="col-sm-1 col-md-1 ima">
+    <img src="http://los40es00.epimg.net/los40/imagenes/2017/01/17/album/1484675309_894438_1484675936_album_normal.jpg" class="img-circle" width= "50px" height= "50px">
+    </div>
+    <div class="col-sm-11 col-md-11 main">
+    <p><b>Demi Lovato</b></p>
+    <p>@demiLovato</p>
+    </div>
+    </a>
+    </div>
+    `;
   }
   </script>
 </head>
@@ -75,8 +125,8 @@
           <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
               <li class="active"><a href="#" onclick="publicaciones()"><span class="badge">32</span>Publicaciones</a></li>
-              <li><a href="#" onclick="seguidores()"><span class="badge">167</span>Seguidores</a></li>
-              <li><a href="#" onclick="siguiendo()"><span class="badge">309</span>Siguiendo</a></li>
+              <li><a href="#" onclick="seguidores()"><span class="badge">4</span>Seguidores</a></li>
+              <li><a href="#" onclick="siguiendo()"><span class="badge">2</span>Siguiendo</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
               <li class="dropdown">

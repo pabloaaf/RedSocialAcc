@@ -46,30 +46,46 @@
           <h4>Kiko Rivera</h4>  
           Que tal todo
         </div>
-      </div>
+        </div><hr>
+      <div class="row">
+        <div class="col-sm-2 col-md-2 ima">
+        <img src="http://los40es00.epimg.net/los40/imagenes/2017/01/17/album/1484675309_894438_1484675936_album_normal.jpg" class="img-circle" alt="profile pic" width="50" height="50">
+        </div>
+        <div class="col-sm-10 col-md-10 ima">
+          <h4>Demi Lovato</h4>  
+          Hi!!!
+        </div>
+        </div><hr>
+      <div class="row">
+        <div class="col-sm-2 col-md-2 ima">
+        <img src="https://i.axs.com/2016/07/promoted-media-optimized_5776cc52b3816.jpg" class="img-circle" alt="profile pic" width="50" height="50">
+        </div>
+        <div class="col-sm-10 col-md-10 ima">
+          <h4>Justin Bieber</h4>  
+          Hagamos una colaboración
+        </div>
+        </div><hr>
+      <div class="row">
+        <div class="col-sm-2 col-md-2 ima">
+        <img src="http://i.telegraph.co.uk/multimedia/archive/02510/justin2_2510378b.jpg" class="img-circle" alt="profile pic" width="50" height="50">
+        </div>
+        <div class="col-sm-10 col-md-10 ima">
+          <h4>Justin Timberlake</h4>  
+          Holaaaa!!
+        </div>
+        </div><hr>
     </div>
     </div>
 
-    <div class="panelNuev">
+
+ <div class="panelNuev">
       <div class="panel-heading">Nuevo mensaje</div>
       <div class="panel-body">
         Usuario<input type="text" class="form-control" name="" placeholder="Enviar a" /><br>
-        <textarea class="form-control" rows="5" id="comment"></textarea><br>
-        <input type="button" name="" value="Enviar">
+        Mensaje<textarea class="form-control" rows="5" id="comment"></textarea><br>
+        <button type="button" class="btn btn-success">Enviar</button>
       </div>
     </div>
-
-    <div class="panelMen">
-      <div class="panel-heading">@justin-bieber</div>
-      <div class="panel-body">
-      </div>
-    </div>
-
-  </div>
-
-
-
-    
 
 </body>
 </html>
