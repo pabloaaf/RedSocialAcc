@@ -17,7 +17,10 @@
   <?php include_once('../../Navbar/index.html'); ?>
   <div class="container">
     <div class="panelGen">
-      <div class="panel-heading">Selena Gomez</div>
+      <div class="panel-heading">
+          <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Selena_Gomez_-_Walmart_Soundcheck_Concert.jpg/492px-Selena_Gomez_-_Walmart_Soundcheck_Concert.jpg" class="img-circle" alt="profile pic" width="50" height="50">
+          Selena Gomez</h1>
+    </div>
       <div class="panel-body">
         <div class="row">
          <div class="col-sm-2 col-md-2 ima">
