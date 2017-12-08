@@ -25,8 +25,10 @@
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Selena_Gomez_-_Walmart_Soundcheck_Concert.jpg/492px-Selena_Gomez_-_Walmart_Soundcheck_Concert.jpg" class="img-circle" alt="profile pic" width="50" height="50">
         </div>
         <div class="col-sm-10 col-md-10 ima">
+          <a href="./EJmens/Selena.php">
           <h4>Selena Gómez</h4>
-          Que tal guapi
+          <p>Que tal guapi</p>
+          </a>
         </div>
       </div><hr>
       <div class="row">
