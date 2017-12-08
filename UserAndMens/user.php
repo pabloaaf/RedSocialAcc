@@ -132,8 +132,8 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-cog gi-2x"></span><span class="caret gi-2x"></span></a>
-                <ul class="dropdown-menu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-target="dp2"><span class="glyphicon glyphicon-cog gi-2x"></span><span class="caret gi-2x"></span></a>
+                <ul class="dropdown-menu" id="dp2">
                   <li><a href="#">Editar Perfil</a></li>
                   <li><a href="#">Suscripción Correo</a></li>
                   <li><a href="#">Cambiar Contraseña</a></li>
