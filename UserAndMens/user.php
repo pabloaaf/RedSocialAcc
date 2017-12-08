@@ -134,9 +134,9 @@
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-target="dp2"><span class="glyphicon glyphicon-cog gi-2x"></span><span class="caret gi-2x"></span></a>
                 <ul class="dropdown-menu" id="dp2">
-                  <li><a href="#">Editar Perfil</a></li>
+                  <li><a href="./cuenta.php">Editar Perfil</a></li>
                   <li><a href="#">Suscripción Correo</a></li>
-                  <li><a href="#">Cambiar Contraseña</a></li>
+                  <li><a href="./contraseña.php">Cambiar Contraseña</a></li>
                   <li class="divider"></li>
                   <li><a href="#">Cerrar sesión</a></li>
                 </ul>
