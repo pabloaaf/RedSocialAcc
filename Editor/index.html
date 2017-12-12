@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta content="text/html; charset=utf-8" />
+		<title>Editor de video</title>
+        
+        <style>
+		
+	    	*{
+				margin:0;
+				padding:0;
+			}
+					
+			body{
+				position:absolute;
+				width:100% !important;
+				height:100% !important;
+			}
+			
+			#contenedorPrincipal{
+				width:98% !important;
+				height:88% !important;
+				background-color:#134253;
+				padding:1%;
+				margin-top:50px;
+			}
+			
+			#barraEdicion,#video,#misSubidas,#publicar,#lineaTiempo{
+				border-radius:5px;
+			}
+			
+			#barraEdicion{
+				width:70% !important;
+				height:10% !important;
+				background-color:#F2FFF9;
+				margin-bottom:0.5%;
+				float:left;
+				border-top-right-radius:0px;
+				border-bottom-right-radius:0px;
+			}
+		
+			#menu1 > li{ 
+				list-style: none !important;
+				float:left;
+				text-align:center;
+				padding-left:10px;
+				padding-top:5px;
+			}
+			
+			#menu2 > li{ 
+				list-style: none !important;
+				float:right;
+				text-align:center;
+				padding-left:10px;
+				padding-top:5px;
+			}
+			
+			#barraEdicion > ul > li > a{
+				text-decoration:none;
+				color:#224570;
+				font-weight:bold;
+				font-size:12px;
+			}
+			
+			#barraEdicion > ul > li:hover, .barraEdicion > li:focus{
+				border-bottom:5px solid #0F3244;
+			}
+			
+			#final > li{
+				float:right;
+			}
+			
+			#publicar{
+				width:30% !important;
+				height:10% !important;
+				float:left;
+				background-color:#F2FFF9;
+				text-align:center;
+				border-top-left-radius:0px;
+				border-bottom-left-radius:0px;
+			}
+			
+			#publicar > a{
+				padding-top:1%;
+			}
+			
+			.boton {
+				display:block;
+				float:right;
+				height:50% !important;
+				width:30% !important;
+				background-color:#224570; 
+				color: #ffffff;
+				text-decoration: none;
+				font-size:18px;
+				font-weight:bold;
+				margin-right:2%;
+				margin-top:3%;
+				text-align:center;
+				border-radius:10px;
+			}
+			
+			#video{
+				width:52% !important;
+				height:55% !important;
+				float:left;
+				text-align:center;
+				background-color:#0F3244;
+				color:#D5DDE3;
+				margin-right:1%;
+			}
+			
+			#video > img{
+				padding-top:5%;
+			}
+			
+			#video > p{
+	 			padding-top:1%;
+				padding-bottom:3%;
+			}
+
+		    #video > label{
+				background-color:#D5DDE3;
+				border:2px solid black;
+				background-image:url(img/anade2.png);
+				background-repeat:no-repeat;
+				color:#224570;
+				font-size:20px;
+				font-weight:bold;
+				padding:5px;
+				padding-left:30px;
+				border-radius:5px;
+				cursor:pointer;
+			}	
+			
+			#misSubidas{
+				width:47% !important;
+				height:55% !important;
+				float:left;
+				overflow: auto;
+				background-color:#F2FFF9;
+				text-align:center;
+				color:#224570;
+				font-weight:bold;
+			}
+			
+			#misSubidas > h2{
+				color:#224570;
+				padding-top:1%;
+			}
+			
+			
+			.contenidoInterno{
+				width: 30% !important;
+				height:43% !important;
+			}
+			
+			#misSubidas > label{
+				cursor:pointer;
+			}
+			
+			#misSubidas > video:hover{
+				-webkit-transform:scale(1);
+				-moz-transform:scale(1.5);
+				-ms-transform:scale(1.5);
+				-o-transform:scale(1.5);
+				transform:scale(1.2);
+			}
+			
+			#lineaTiempo{
+				width:100% !important;
+				height:33% !important;
+				float:left;
+				background-color:#0F3244;
+				text-align:center;
+				margin-top:0.5%;
+				overflow:hidden;
+			}
+			
+			b{
+				color:#F00;
+			}
+
+			}
+						
+			table{
+				background-color:#0F3244;
+				border-color:#D5DDE3;
+				width:100% !important;
+				height:100% !important;
+				overflow:hidden;
+			}
+			
+			pre{
+				background-color:#0F3244;
+			}
+			
+			table th,pre{
+				color:#D5DDE3;
+			}
+			
+			.videoLineaTiempo{
+				width:20% !important;
+				height:25% !important;
+				float:left;
+			}
+			
+			.imagenLineaTiempo{
+				width:5% !important;
+				height:15% !important;
+			}
+			
+			.musicaLineaTiempo{
+				width:48% !important;
+				height:25% !important;
+			}
+						
+	    </style>
+       
+	</head>
+    <body>
+
+    	<div id="contenedorPrincipal">
+        	<div id="barraEdicion">
+            	<ul id="menu1">
+                
+                    <li>
+                    	<a href="#" >  
+                            <img src="img/deshacer.png" title="Deshacer"/> <br>
+                            <p> Deshacer  </p> 
+                      	</a> 
+                    </li>
+                    
+                    <li>
+                    	<a href="#" > 
+                            <img src="img/rehacer.png" title="Rehacer"/> <br>
+                            <p> Rehacer  </p> 
+                      	</a> 
+                    </li>
+                    
+                    <li class="separacion">
+                    	<a href="#" > 
+                            <img src="img/revertir.png" title="Revertir cambios"/> <br>
+                            <p> Revertir</p> 
+                      	</a> 
+                    </li>
+                   
+                    <li>
+                    	<a href="#" > 
+                            <img src="img/brillo.png" title="Brillo"/> <br>
+                            <p> Brillo  </p>  
+                      	</a> 
+                    </li>
+                    
+                    <li>
+                    	<a href="#" >  
+                            <img src="img/contraste.png" title="Contraste"/> <br>
+                            <p> Contraste  </p> 
+                      	</a> 
+                    </li>
+                    
+                    <li>
+                    	<a href="#" > 
+                            <img src="img/rotar.png" title="Rotar"/> <br>
+                            <p> Rotar  </p>  
+                      	</a> 
+                    </li>
+                    
+                    <li>
+                    	<a href="#" > 
+                            <img src="img/recortar.png" title="Recortar"/> <br>
+                            <p> Recortar  </p> 
+                      	</a> 
+                    </li>
+                    
+                    <li>
+                    	<a href="#" > 
+                            <img src="img/efectos.png" title="Efectos"/> <br>
+                            <p> Efectos  </p> 
+                      	</a> 
+                    </li>
+                    
+                    <li>
+                    	<a href="#" > 
+                            <img src="img/emoticonos.png" title="Emoticonos"/> <br>
+                            <p> Emoticonos  </p> 
+                      	</a> 
+                    </li>
+                    
+					<li>
+                    	<a href="#" > 
+                            <img src="img/ruido.png" title="Ruido"/> <br>
+                            <p> Ruido  </p>  
+                      	</a> 
+                    </li>
+                    
+                    <li>
+                    	<a href="#" >  
+                            <img src="img/texto.png" title="Texto"/> <br>
+                            <p> Texto  </p> 
+                      	</a> 
+                    </li>
+                    
+                    <li class="separacion">
+                    	<a href="#" > 
+                            <img src="img/grabar.png" title="Grabar"/> <br>
+                            <p> Grabar  </p> 
+                      	</a> 
+                    </li>
+                    
+				</ul>
+                
+                <ul id="menu2">
+                    
+                    <li>
+                    	<a href="#" > 
+                          <img src="img/original.png" title="Ver original"/> <br>
+                          <p> ver Original </p> 
+                      	</a> 
+                    </li>
+                    
+                    <li>
+                    	<a href="#" > 
+                          <img src="img/antesDespues.png" title="Antes/Despues"/> <br>
+                          <p>Antes/Despues</p> 
+                      	</a> 
+                    </li>
+                    
+				</ul>
+            </div>
+            
+            <div id="publicar">
+                <a href="#" class="boton">Exportar</a>
+                <a href="#" class="boton">Publicar</a>
+            </div>
+            
+            <div id="video">
+            	<img src="img/subir.png"/>
+                <h2> Arrastra & Suelta tu musica aqui</h2>
+                <p> _____________ O selecciona un archivo _____________</p>
+                <label for="image">
+                	<input type="file" name="image" id="image" style="display:none;"/>
+                    Buscar musica
+                 </label>
+            </div>
+            
+            <div id="misSubidas">
+            	<h2> <img src="img/notaMusical.png"/> Mis subidas <img src="img/notaMusical.png"/> </h2>
+                <video src="musica/musica2.webm" class="contenidoInterno" controls autoplay muted loop draggable="true" ></video>
+            	<video src="musica/musica1.webm" class="contenidoInterno" controls autoplay muted loop draggable="true" ></video>
+                <video src="musica/musica2.webm" class="contenidoInterno" controls autoplay muted loop draggable="true" ></video>
+                <br>
+                <label for="image">
+      				<input type="file" name="image" id="image" style="display:none;"/>
+      				<img src="img/anade.png"/>
+                    <p> Sube tus nuevas creaciones </p>
+   				</label>
+            </div>
+            
+            <div id="lineaTiempo">
+           		<table border="1">
+                    <tr>
+                      <td></td>
+                      <th><pre>00:00:00       00:00:05 	00:00:10 	00:00:15	00:00:20 	00:00:25 	00:00:30 	00:00:35 	00:00:40 	00:00:45 	00:00:50 	        </pre>
+                    |___|___|___|___|___|___|___|___|___|___|___|___|___|___<b>|</b>___|___|___|___|___|___|___|___|___|___
+                      |___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|</th>
+                    </tr>
+                     
+                    <tr>
+                      <td><img src="img/video.png" width="30px" height="30px"/></td>
+                      <td><img src="img/cinta video.png" class="videoLineaTiempo"/></td>
+                    </tr>
+                     
+                    <tr>
+                      <td><img src="img/imagen.png" width="30px" height="30px"/></td>
+                      <td>
+                      	<img src="img/imag1.png" class="imagenLineaTiempo"/>
+                        <img src="img/imag2.png" class="imagenLineaTiempo"/>
+                        <img src="img/imag3.png" class="imagenLineaTiempo"/>
+                        <img src="img/imag4.png" class="imagenLineaTiempo"/>
+                        <img src="img/imag5.png" class="imagenLineaTiempo"/>
+                        <img src="img/imag6.png" class="imagenLineaTiempo"/>
+                        <img src="img/imag7.png" class="imagenLineaTiempo"/>
+                      
+                      </td>
+                    </tr>
+                     
+                    <tr>
+                      <td><img src="img/texto2.png" width="30px" height="25px"/></td>
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td><img src="img/musica.png" width="30px" height="30px"/></td>
+                      <td>
+						<img src="img/cinta musica 1.png" class="musicaLineaTiempo"/>
+						<img src="img/cinta musica 2.png" class="musicaLineaTiempo"/>
+                      </td>
+                    </tr>
+                </table>
+            </div>
+            
+        </div>
+        
+        <!--PARTES COMUNES-->
+        <!--FIN PARTES COMUNES-->
+        
+	</body>
+</html>
