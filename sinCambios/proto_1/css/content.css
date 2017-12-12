@@ -1,0 +1,14 @@
+main{
+	width: 100%;
+}
+
+section{
+	display: none;
+}
+
+.postData{
+	text-align: right;
+}
+section > h2 {
+	text-align: center;
+}

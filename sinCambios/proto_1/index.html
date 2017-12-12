@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>iMusic</title>
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous">
+  </script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="css/navigation.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/content.css">
+  <script src="js/index.js"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <nav id="sidebar">
+      <div class="sidebar-header">
+        <h3>iMusic</h3>
+      </div>
+      <ul class="list-unstyled components">
+        <li>
+          <a href="#posts" data-toggle="collapse" aria-expanded="false"><i class="glyphicon glyphicon-music"></i>  Post</a>
+          <ul class="collapse list-unstyled" id="posts">
+            <li><a change="principal">Principal</a></li>
+            <li><a change="tendencias">Tendencias</a></li>
+            <li><a change="recomendados">Recomendados</a></li>
+          </ul>
+        </li>
+        <li>
+          <a change="buscar"><i class="glyphicon glyphicon-search"></i>  Buscar</a>
+        </li>
+        <li>
+          <a change="abc"><i class="glyphicon glyphicon-search"></i>  ABC</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main id="content">
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" id="sidebarCollapse" class="navbar-btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+
+          <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <a change="mensajes" >
+                  <i class="glyphicon glyphicon-envelope"></i> Mensaje
+                </a>
+              </li>
+              <li>
+                <a change="perfil">
+                  <i class="glyphicon glyphicon-user"></i> Juan Garcia
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <section id="principal">
+        <div class="panel-group">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <div class="embed-responsive embed-responsive-16by9">
+                <video class="embed-responsive-item" controls>
+                  <source src="static/media.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="container-fluid postData">
+                  <h4>Juan Perez <i class="glyphicon glyphicon-user"></i></h4>
+                  <p>12/1/2017 <i class="glyphicon glyphicon-time"></i></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <video class="embed-responsive-item" controls>
+                    <source src="static/media.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="container-fluid postData">
+                    <h4>Juan Perez <i class="glyphicon glyphicon-user"></i></h4>
+                    <p>12/1/2017 <i class="glyphicon glyphicon-time"></i></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <video class="embed-responsive-item" controls>
+                      <source src="static/media.mp4" type="video/mp4">
+                      </video>
+                    </div>
+                    <div class="container-fluid postData">
+                      <h4>Juan Perez <i class="glyphicon glyphicon-user"></i></h4>
+                      <p>12/1/2017 <i class="glyphicon glyphicon-time"></i></p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="panel panel-default">
+                  <div class="panel-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <video class="embed-responsive-item" controls>
+                        <source src="static/media.mp4" type="video/mp4">
+                        </video>
+                      </div>
+                      <div class="container-fluid postData">
+                        <h4>Juan Perez <i class="glyphicon glyphicon-user"></i></h4>
+                        <p>12/1/2017 <i class="glyphicon glyphicon-time"></i></p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="panel panel-default">
+                    <div class="panel-body">
+                      <div class="embed-responsive embed-responsive-16by9">
+                        <video class="embed-responsive-item" controls>
+                          <source src="static/media.mp4" type="video/mp4">
+                          </video>
+                        </div>
+                        <div class="container-fluid postData">
+                          <h4>Juan Perez <i class="glyphicon glyphicon-user"></i></h4>
+                          <p>12/1/2017 <i class="glyphicon glyphicon-time"></i></p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                      <div class="panel-body">
+                        <div class="embed-responsive embed-responsive-16by9">
+                          <video class="embed-responsive-item" controls>
+                            <source src="static/media.mp4" type="video/mp4">
+                            </video>
+                          </div>
+                          <div class="container-fluid postData">
+                            <h4>Juan Perez <i class="glyphicon glyphicon-user"></i></h4>
+                            <p>12/1/2017 <i class="glyphicon glyphicon-time"></i></p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="panel panel-default">
+                        <div class="panel-body">
+                          <div class="embed-responsive embed-responsive-16by9">
+                            <video class="embed-responsive-item" controls>
+                              <source src="static/media.mp4" type="video/mp4">
+                              </video>
+                            </div>
+                            <div class="container-fluid postData">
+                              <h4>Juan Perez <i class="glyphicon glyphicon-user"></i></h4>
+                              <p>12/1/2017 <i class="glyphicon glyphicon-time"></i></p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                          <div class="panel-body">
+                            <div class="embed-responsive embed-responsive-16by9">
+                              <video class="embed-responsive-item" controls>
+                                <source src="static/media.mp4" type="video/mp4">
+                                </video>
+                              </div>
+                              <div class="container-fluid postData">
+                                <h4>Juan Perez <i class="glyphicon glyphicon-user"></i></h4>
+                                <p>12/1/2017 <i class="glyphicon glyphicon-time"></i></p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="panel panel-default">
+                            <div class="panel-body">
+                              <div class="embed-responsive embed-responsive-16by9">
+                                <video class="embed-responsive-item" controls>
+                                  <source src="static/media.mp4" type="video/mp4">
+                                  </video>
+                                </div>
+                                <div class="container-fluid postData">
+                                  <h4>Juan Perez <i class="glyphicon glyphicon-user"></i></h4>
+                                  <p>12/1/2017 <i class="glyphicon glyphicon-time"></i></p>
+                                </div>
+                              </div>
+                            </div>
+
+                          </div>
+                        </section>
+
+                        <section id="tendencias">
+                          <h2>Tendencias</h2>
+                          <div class="panel-group">
+
+                            <div class="panel panel-default">
+                              <div class="panel-body">
+                                <div class="embed-responsive embed-responsive-16by9">
+                                  <video class="embed-responsive-item" controls>
+                                    <source src="static/media.mp4" type="video/mp4">
+                                    </video>
+                                  </div>
+                                  <div class="container-fluid postData">
+                                    <h4>Juan Perez <i class="glyphicon glyphicon-user"></i></h4>
+                                    <p>12/1/2017 <i class="glyphicon glyphicon-time"></i></p>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="panel panel-default">
+                                <div class="panel-body">
+                                  <div class="embed-responsive embed-responsive-16by9">
+                                    <video class="embed-responsive-item" controls>
+                                      <source src="static/media.mp4" type="video/mp4">
+                                      </video>
+                                    </div>
+                                    <div class="container-fluid postData">
+                                      <h4>Juan Perez <i class="glyphicon glyphicon-user"></i></h4>
+                                      <p>12/1/2017 <i class="glyphicon glyphicon-time"></i></p>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                  <div class="panel-body">
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                      <video class="embed-responsive-item" controls>
+                                        <source src="static/media.mp4" type="video/mp4">
+                                        </video>
+                                      </div>
+                                      <div class="container-fluid postData">
+                                        <h4>Juan Perez <i class="glyphicon glyphicon-user"></i></h4>
+                                        <p>12/1/2017 <i class="glyphicon glyphicon-time"></i></p>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="panel panel-default">
+                                    <div class="panel-body">
+                                      <div class="embed-responsive embed-responsive-16by9">
+                                        <video class="embed-responsive-item" controls>
+                                          <source src="static/media.mp4" type="video/mp4">
+                                          </video>
+                                        </div>
+                                        <div class="container-fluid postData">
+                                          <h4>Juan Perez <i class="glyphicon glyphicon-user"></i></h4>
+                                          <p>12/1/2017 <i class="glyphicon glyphicon-time"></i></p>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    <div class="panel panel-default">
+                                      <div class="panel-body">
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                          <video class="embed-responsive-item" controls>
+                                            <source src="static/media.mp4" type="video/mp4">
+                                            </video>
+                                          </div>
+                                          <div class="container-fluid postData">
+                                            <h4>Juan Perez <i class="glyphicon glyphicon-user"></i></h4>
+                                            <p>12/1/2017 <i class="glyphicon glyphicon-time"></i></p>
+                                          </div>
+                                        </div>
+                                      </div>
+
+                                      <div class="panel panel-default">
+                                        <div class="panel-body">
+                                          <div class="embed-responsive embed-responsive-16by9">
+                                            <video class="embed-responsive-item" controls>
+                                              <source src="static/media.mp4" type="video/mp4">
+                                              </video>
+                                            </div>
+                                            <div class="container-fluid postData">
+                                              <h4>Juan Perez <i class="glyphicon glyphicon-user"></i></h4>
+                                              <p>12/1/2017 <i class="glyphicon glyphicon-time"></i></p>
+                                            </div>
+                                          </div>
+                                        </div>
+
+                                        <div class="panel panel-default">
+                                          <div class="panel-body">
+                                            <div class="embed-responsive embed-responsive-16by9">
+                                              <video class="embed-responsive-item" controls>
+                                                <source src="static/media.mp4" type="video/mp4">
+                                                </video>
+                                              </div>
+                                              <div class="container-fluid postData">
+                                                <h4>Juan Perez <i class="glyphicon glyphicon-user"></i></h4>
+                                                <p>12/1/2017 <i class="glyphicon glyphicon-time"></i></p>
+                                              </div>
+                                            </div>
+                                          </div>
+
+                                          <div class="panel panel-default">
+                                            <div class="panel-body">
+                                              <div class="embed-responsive embed-responsive-16by9">
+                                                <video class="embed-responsive-item" controls>
+                                                  <source src="static/media.mp4" type="video/mp4">
+                                                  </video>
+                                                </div>
+                                                <div class="container-fluid postData">
+                                                  <h4>Juan Perez <i class="glyphicon glyphicon-user"></i></h4>
+                                                  <p>12/1/2017 <i class="glyphicon glyphicon-time"></i></p>
+                                                </div>
+                                              </div>
+                                            </div>
+
+                                            <div class="panel panel-default">
+                                              <div class="panel-body">
+                                                <div class="embed-responsive embed-responsive-16by9">
+                                                  <video class="embed-responsive-item" controls>
+                                                    <source src="static/media.mp4" type="video/mp4">
+                                                    </video>
+                                                  </div>
+                                                  <div class="container-fluid postData">
+                                                    <h4>Juan Perez <i class="glyphicon glyphicon-user"></i></h4>
+                                                    <p>12/1/2017 <i class="glyphicon glyphicon-time"></i></p>
+                                                  </div>
+                                                </div>
+                                              </div>
+
+                                            </div>
+                                          </section>
+
+                                          <section id="recomendados">
+                                            <h2>Recomendados para ti</h2>
+                                            <div class="panel-group">
+
+                                              <div class="panel panel-default">
+                                                <div class="panel-body">
+                                                  <div class="embed-responsive embed-responsive-16by9">
+                                                    <video class="embed-responsive-item" controls>
+                                                      <source src="static/media.mp4" type="video/mp4">
+                                                      </video>
+                                                    </div>
+                                                    <div class="container-fluid postData">
+                                                      <h4>Juan Perez <i class="glyphicon glyphicon-user"></i></h4>
+                                                      <p>12/1/2017 <i class="glyphicon glyphicon-time"></i></p>
+                                                    </div>
+                                                  </div>
+                                                </div>
+
+                                                <div class="panel panel-default">
+                                                  <div class="panel-body">
+                                                    <div class="embed-responsive embed-responsive-16by9">
+                                                      <video class="embed-responsive-item" controls>
+                                                        <source src="static/media.mp4" type="video/mp4">
+                                                        </video>
+                                                      </div>
+                                                      <div class="container-fluid postData">
+                                                        <h4>Juan Perez <i class="glyphicon glyphicon-user"></i></h4>
+                                                        <p>12/1/2017 <i class="glyphicon glyphicon-time"></i></p>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+
+                                                  <div class="panel panel-default">
+                                                    <div class="panel-body">
+                                                      <div class="embed-responsive embed-responsive-16by9">
+                                                        <video class="embed-responsive-item" controls>
+                                                          <source src="static/media.mp4" type="video/mp4">
+                                                          </video>
+                                                        </div>
+                                                        <div class="container-fluid postData">
+                                                          <h4>Juan Perez <i class="glyphicon glyphicon-user"></i></h4>
+                                                          <p>12/1/2017 <i class="glyphicon glyphicon-time"></i></p>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+
+                                                    <div class="panel panel-default">
+                                                      <div class="panel-body">
+                                                        <div class="embed-responsive embed-responsive-16by9">
+                                                          <video class="embed-responsive-item" controls>
+                                                            <source src="static/media.mp4" type="video/mp4">
+                                                            </video>
+                                                          </div>
+                                                          <div class="container-fluid postData">
+                                                            <h4>Juan Perez <i class="glyphicon glyphicon-user"></i></h4>
+                                                            <p>12/1/2017 <i class="glyphicon glyphicon-time"></i></p>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+
+                                                      <div class="panel panel-default">
+                                                        <div class="panel-body">
+                                                          <div class="embed-responsive embed-responsive-16by9">
+                                                            <video class="embed-responsive-item" controls>
+                                                              <source src="static/media.mp4" type="video/mp4">
+                                                              </video>
+                                                            </div>
+                                                            <div class="container-fluid postData">
+                                                              <h4>Juan Perez <i class="glyphicon glyphicon-user"></i></h4>
+                                                              <p>12/1/2017 <i class="glyphicon glyphicon-time"></i></p>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+
+                                                        <div class="panel panel-default">
+                                                          <div class="panel-body">
+                                                            <div class="embed-responsive embed-responsive-16by9">
+                                                              <video class="embed-responsive-item" controls>
+                                                                <source src="static/media.mp4" type="video/mp4">
+                                                                </video>
+                                                              </div>
+                                                              <div class="container-fluid postData">
+                                                                <h4>Juan Perez <i class="glyphicon glyphicon-user"></i></h4>
+                                                                <p>12/1/2017 <i class="glyphicon glyphicon-time"></i></p>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+
+                                                          <div class="panel panel-default">
+                                                            <div class="panel-body">
+                                                              <div class="embed-responsive embed-responsive-16by9">
+                                                                <video class="embed-responsive-item" controls>
+                                                                  <source src="static/media.mp4" type="video/mp4">
+                                                                  </video>
+                                                                </div>
+                                                                <div class="container-fluid postData">
+                                                                  <h4>Juan Perez <i class="glyphicon glyphicon-user"></i></h4>
+                                                                  <p>12/1/2017 <i class="glyphicon glyphicon-time"></i></p>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+
+                                                            <div class="panel panel-default">
+                                                              <div class="panel-body">
+                                                                <div class="embed-responsive embed-responsive-16by9">
+                                                                  <video class="embed-responsive-item" controls>
+                                                                    <source src="static/media.mp4" type="video/mp4">
+                                                                    </video>
+                                                                  </div>
+                                                                  <div class="container-fluid postData">
+                                                                    <h4>Juan Perez <i class="glyphicon glyphicon-user"></i></h4>
+                                                                    <p>12/1/2017 <i class="glyphicon glyphicon-time"></i></p>
+                                                                  </div>
+                                                                </div>
+                                                              </div>
+
+                                                              <div class="panel panel-default">
+                                                                <div class="panel-body">
+                                                                  <div class="embed-responsive embed-responsive-16by9">
+                                                                    <video class="embed-responsive-item" controls>
+                                                                      <source src="static/media.mp4" type="video/mp4">
+                                                                      </video>
+                                                                    </div>
+                                                                    <div class="container-fluid postData">
+                                                                      <h4>Juan Perez <i class="glyphicon glyphicon-user"></i></h4>
+                                                                      <p>12/1/2017 <i class="glyphicon glyphicon-time"></i></p>
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+
+                                                              </div>
+                                                            </section>
+
+                                                            <section id="buscar">
+                                                              <h2>Buscar</h2>
+                                                              <div class="panel panel-default">
+                                                                <div class="panel-body">
+                                                                  <form class="form-horizontal" action="">
+                                                                    <input placeholder="Autor" class="form-control" type="text">
+                                                                    <button class="btn btn-primary">Buscar</button>
+                                                                  </form>
+                                                                </div>
+                                                              </div>
+                                                            </section>
+
+                                                            <section id="mensajes">
+                                                              <h2>Mensajes</h2>
+                                                              <div class="panel-group">
+                                                                <div class="panel panel-default">
+                                                                  <div class="panel-body">
+                                                                    <div class="row">
+                                                                     <div class="col-sm-2 col-md-2 ">
+                                                                      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Selena_Gomez_-_Walmart_Soundcheck_Concert.jpg/492px-Selena_Gomez_-_Walmart_Soundcheck_Concert.jpg" class="img-circle" alt="profile pic"  width="50" height="50">
+                                                                    </div>
+                                                                    <div class="col-sm-10 col-md-10">
+                                                                      <a href="#">
+                                                                      <h4><b>Selena Gómez</b></h4>
+                                                                      <p>Que tal guapi</p>
+                                                                      </a>
+                                                                    </div>
+                                                                  </div>
+                                                                  </div>
+                                                              </div>
+
+                                                            </section>
+
+                                                            <section id="perfil">
+                                                              <h2>Perfil</h2>
+                                                            </section>
+                                                          </main>
+                                                        </div>
+                                                      </body>
+                                                      </html>
