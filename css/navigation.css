@@ -21,7 +21,7 @@
 #sidebar {
     min-width: 250px;
     max-width: 250px;
-    background: rgba(100,255,100,1);
+    background: #00fa9a /*rgba(100,255,100,1)*/;
     color: #fff;
     transition: all 0.6s cubic-bezier(0.945, 0.020, 0.270, 0.665);
     transform-origin: bottom left;
@@ -34,7 +34,7 @@
 
 #sidebar .sidebar-header {
     padding: 20px;
-    background: #00FF00;
+    background: #98fb98;
 }
 
 #sidebar ul.components {
@@ -52,13 +52,13 @@
     display: block;
 }
 #sidebar ul li a:hover {
-    color: #00FF00;
+    color: #98fb98;
     background: #fff;
 }
 
 #sidebar ul li.active > a, a[aria-expanded="true"] {
     color: #fff;
-    background: #00FF00;
+    background: #98fb98;
 }
 
 a[data-toggle="collapse"] {
@@ -81,7 +81,7 @@ a[aria-expanded="true"]::before {
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: rgba(100,255,100,1);
+    background: #00fa9a /*rgba(100,255,100,1)*/;
 }
 
 #content {
