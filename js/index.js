@@ -20,23 +20,22 @@ $(document).ready(function () {
       $("#panelNuev").hide();
       $("#panelGen").show();
     });
-
-    //CAMBIAR
-    /*
-  publicaciones();
-  function publicaciones() {
     $("#public").show();
     $("#sig").hide();
     $("#seg").hide();
-  }
-  function seguidores() {
-    $("#public").hide();
-    $("#sig").hide();
-    $("#seg").show();
-  }
-  function siguiendo() {
-    $("#public").hide();
-    $("#sig").show();
-    $("#seg").hide();
-  }*/
+    $("#clickpubli").click(function(){
+      $("#public").show();
+      $("#sig").hide();
+      $("#seg").hide();
+    });
+    $("#clicksig").click(function(){
+      $("#public").hide();
+      $("#sig").show();
+      $("#seg").hide();
+    });
+    $("#clickseg").click(function(){
+      $("#public").hide();
+      $("#sig").hide();
+      $("#seg").show();
+    });
 });
