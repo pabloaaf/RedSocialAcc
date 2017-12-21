@@ -10,32 +10,8 @@ $(document).ready(function () {
 		});
 		$('#'+$(this).attr('change')).show();
     });
-    $('#mens').addClass("active");
-    $("#panelNuev").hide();
-    $("#nuevo").click(function(){
-      $("#panelNuev").show();
-      $("#panelGen").hide();
-    });
-    $("#enviar").click(function(){
-      $("#panelNuev").hide();
-      $("#panelGen").show();
-    });
-    $("#public").show();
-    $("#sig").hide();
-    $("#seg").hide();
-    $("#clickpubli").click(function(){
-      $("#public").show();
-      $("#sig").hide();
-      $("#seg").hide();
-    });
-    $("#clicksig").click(function(){
-      $("#public").hide();
-      $("#sig").show();
-      $("#seg").hide();
-    });
-    $("#clickseg").click(function(){
-      $("#public").hide();
-      $("#sig").hide();
-      $("#seg").show();
-    });
 });
+
+
+
+
