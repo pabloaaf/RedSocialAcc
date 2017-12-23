@@ -12,8 +12,3 @@ section{
 section > h2 {
 	text-align: center;
 }
-
-.panel-body {
-	width: 50%;/* Ajustar anchura del video*/
-	margin-left: 25%;
-}

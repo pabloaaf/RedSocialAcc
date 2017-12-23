@@ -2,11 +2,9 @@
 
 FALLOS
 
-- no carga la imagen en login y singup
+- al hacerse pequeño, desaparecen botones navbar
 
 
 
 AÑADIR
 
-- boton new post dirigido al editor
-- boton en mensajes para nuevo mensaje
