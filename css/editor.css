@@ -18,7 +18,7 @@
 #barraEdicion{
 	width:70% !important;
 	height:10% !important;
-	background-color:#00FA9A;
+	background-color:#98fb98;
 	float:left;
 	border-top-right-radius:0px !important;
 	border-bottom-right-radius:0px !important;
@@ -60,7 +60,7 @@
 	width:30% !important;
 	height:10% !important;
 	float:left;
-	background-color:#00FA9A;
+	background-color:#98fb98;
 	text-align:center;
 	border-top-left-radius:0px !important;
 	border-bottom-left-radius:0px !important;
@@ -128,7 +128,7 @@
 	height:55% !important;
 	float:left;
 	overflow: auto;
-	background-color:#00FA9A;
+	background-color:#98fb98;
 	text-align:center;
 	color:#224570;
 	font-weight:bold;
