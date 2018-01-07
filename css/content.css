@@ -2,6 +2,10 @@ main{
 	width: 100%;
 }
 
+#fixedbutton {
+        position: fixed;
+        bottom: 15px;
+}
 section{
 	display: none;
 }

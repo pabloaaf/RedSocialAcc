@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>iMusic</title>
+  <title>Quaver</title>
   <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
@@ -28,11 +28,11 @@
   <div class="wrapper">
     <nav id="sidebar">
       <div class="sidebar-header">
-        <h3>iMusic</h3>
+        <h3>Quaver</h3>
       </div>
       <ul class="list-unstyled components">
         <li>
-          <a href="#posts" data-toggle="collapse" aria-expanded="false"><i class="glyphicon glyphicon-music"></i>  Post</a>
+          <a href="#posts" data-toggle="collapse" aria-expanded="false"><i class="glyphicon glyphicon-music"></i>  Principal</a>
           <ul class="collapse list-unstyled" id="posts">
             <li><a change="principal">Principal</a></li>
             <li><a change="tendencias">Tendencias</a></li>
@@ -46,6 +46,50 @@
           <a change="abc"><i class="glyphicon glyphicon-search"></i>  ABC</a>
         </li>
       </ul>
+      <div class="panel panel-default" style="margin-top:10px;margin-left:6px;margin-right:6px;">
+        <div class="panel-body">
+          TENDENCIAS
+          <table style="border">
+            <tr>
+              <th><button>Profesional</button></th>
+              <th><button>Amateur</button></th>
+            </tr>
+            <tr>
+              <td>#1</td>
+            </tr>
+            <tr>
+              <td>#2</td>
+            </tr>
+            <tr>
+              <td>#3</td>
+            </tr>
+            <tr>
+              <td>#4</td>
+            </tr>
+            <tr>
+              <td>#5</td>
+            </tr>
+            <tr>
+              <td>#6</td>
+            </tr>
+            <tr>
+              <td>#7</td>
+            </tr>
+            <tr>
+              <td>#8</td>
+            </tr>
+            <tr>
+              <td>#9</td>
+            </tr>
+            <tr>
+              <td>#10</td>
+            </tr>
+          </table>
+
+          <a change="tendencias">Ir a tendencias</a>
+
+        </div>
+      </div>
     </nav>
 
     <main id="content">
@@ -63,12 +107,12 @@
             <ul class="nav navbar-nav navbar-right">
               <li>
                 <a change="editor">
-                  <i class="glyphicon glyphicon-plus"></i> New Post
+                  <i class="glyphicon glyphicon-plus"></i> Nuevo Post
                 </a>
               </li>
               <li>
                 <a change="mensajes" >
-                  <i class="glyphicon glyphicon-envelope"></i> Mensaje
+                  <i class="glyphicon glyphicon-envelope"></i> Mensajes
                 </a>
               </li>
               <li>
@@ -500,11 +544,18 @@
                           </form>
                         </div>
                       </div>
+
+                      <div class="panel panel-default">
+                        <div class="panel-body">
+                          RESULTADO, ESTILO PERFIL O ALGO
+                        </div>
+                      </div>
+
                     </section>
 
                     <section id="mensajes">
                       <h2>Mensajes</h2>
-                      <div class="panel-group">
+                      <div class="panel-group" style="overflow-y:scroll;">
                         <div class="panel panel-default">
                           <div class="panel-body">
                             <div class="row">
@@ -617,9 +668,9 @@
 		  	<p><strong>Selena Gómez</strong> Hi. My name is Selena and I'm from Texas. Listen my new single 'Wolves'. Now avaliable!</p>
 		  </div>
 		  <div class="col-xs-6 col-md-4">
-		  	<p style="text-align:right;"><a href="http://twitter.com/AQUI_TU_USUARIO" target="_blank"><img src="https://lh6.googleusercontent.com/--aIk2uBwEKM/T3nN1x09jBI/AAAAAAAAAs8/qzDsbw3kEm8/s32/twitter32.png" width=25 height=25 alt="Síguenos en Twitter" /></a>
-		  	<a href="URL_DE_TU_CANAL_YOUTUBE" target="_blank"><img alt="Siguenos en YouTube" src="https://lh5.googleusercontent.com/-TXzlKCbKzWs/T6mYkDhTXyI/AAAAAAAAA1U/vm95Q2KwrYg/s32/youtube32.png" width=25 height=25  /></a>
-		  	<a href="URL_DE_TU_PERFIL_INSTAGRAM" target="_blank"><img alt="Siguenos en Blogger" src="https://lh5.googleusercontent.com/-vBqtz2iv2BE/UIqE3LQyFMI/AAAAAAAABgA/TJ4W-vIBjsc/s32/instagram32.png" width=25 height=25  /></a></p>
+		  	<p style="text-align:right;"><a href="https://twitter.com/selenagomez" target="_blank"><img src="https://lh6.googleusercontent.com/--aIk2uBwEKM/T3nN1x09jBI/AAAAAAAAAs8/qzDsbw3kEm8/s32/twitter32.png" width=25 height=25 alt="Síguenos en Twitter" /></a>
+		  	<a href="https://www.youtube.com/channel/UCPNxhDvTcytIdvwXWAm43cA" target="_blank"><img alt="Siguenos en YouTube" src="https://lh5.googleusercontent.com/-TXzlKCbKzWs/T6mYkDhTXyI/AAAAAAAAA1U/vm95Q2KwrYg/s32/youtube32.png" width=25 height=25  /></a>
+		  	<a href="https://www.instagram.com/selenagomez/?hl=es" target="_blank"><img alt="Siguenos en Blogger" src="https://lh5.googleusercontent.com/-vBqtz2iv2BE/UIqE3LQyFMI/AAAAAAAABgA/TJ4W-vIBjsc/s32/instagram32.png" width=25 height=25  /></a></p>
 
 
 		  </div>
@@ -640,7 +691,7 @@
                   <li><a change="suscripcion">Notificacions por Correo</a></li>
                   <li><a change="contraseña">Cambiar Contraseña</a></li>
                   <li class="divider"></li>
-                  <li><a href="#">Cerrar sesión</a></li>
+                  <li><a href="./index.html">Cerrar sesión</a></li>
                 </ul>
               </li>
             </ul>
@@ -814,31 +865,31 @@
             </div>
           </div>
           <div class="form-group">
-            <label class="col-lg-3 control-label">Email:</label>
+            <label class="col-lg-3 control-label">Correo electrónico:</label>
             <div class="col-lg-8">
               <input class="form-control" value="janesemail@gmail.com" type="text">
             </div>
           </div>
           <div class="form-group">
-            <label class="col-lg-3 control-label">Phone Number:</label>
+            <label class="col-lg-3 control-label">Número de teléfono:</label>
             <div class="col-lg-8">
               <input class="form-control" value="632598745" type="text">
             </div>
           </div>
           <div class="form-group">
-            <label class="col-md-3 control-label">Username:</label>
+            <label class="col-md-3 control-label">Nombre de usuario:</label>
             <div class="col-md-8">
               <input class="form-control" value="janeuser" type="text">
             </div>
           </div>
           <div class="form-group">
-            <label class="col-md-3 control-label">Password:</label>
+            <label class="col-md-3 control-label">Contraseña:</label>
             <div class="col-md-8">
               <input class="form-control" value="11111122333" type="password">
             </div>
           </div>
           <div class="form-group">
-            <label class="col-md-3 control-label">Confirm password:</label>
+            <label class="col-md-3 control-label">Confirmar contraseña:</label>
             <div class="col-md-8">
               <input class="form-control" value="11111122333" type="password">
             </div>
@@ -881,7 +932,7 @@
 
 <div class="panel-group">
   <header>
-    <h1>Your <strong>favorite</strong> genres</h1>  
+    <h1>Tus <strong>géneros</strong> favoritos</h1>  
   </header>
       
       <div class="row">
@@ -891,7 +942,7 @@
         <div class="ch-item" style="background-image: url(https://images.sk-static.com/images/media/img/col3/20120614-212805-236460.jpg)">
           <div class="ch-info">
             <h3 style="color: black; font-weight: bold;">POP</h3>
-            <p><a href="http://drbl.in/eODP" style="color: black">Change </a><a href="http://drbl.in/eODP" style="color: black">Delete</a></p>
+            <p><a href="http://drbl.in/eODP" style="color: black">Cambiar </a><a href="http://drbl.in/eODP" style="color: black">Borrar</a></p>
           </div>
         </div>
       </li>
@@ -900,7 +951,7 @@
         <div class="ch-item" style="background-image: url(https://wwcdn.weddingwire.com/vendor/355001_360000/355093/thumbnails/220x220_SQ_1421445103901-123rf---rock-music-sign---11657284m.jpg)">
           <div class="ch-info">
             <h3 style="color: black; font-weight: bold;">ROCK</h3>
-            <p><a href="http://drbl.in/eODP" style="color: black">Change </a><a href="http://drbl.in/eODP" style="color: black">Delete</a></p>
+            <p><a href="http://drbl.in/eODP" style="color: black">Cambiar </a><a href="http://drbl.in/eODP" style="color: black">Borrar</a></p>
           </div>
         </div>
       </li>
@@ -909,7 +960,7 @@
         <div class="ch-item" style="background-image: url(https://listasspotify.es/sites/listasspotify.es/files/imagecache/portada_v2/50751-i-love-indie-1920x1080-music-wallpaper-418x313.jpeg)">
           <div class="ch-info">
             <h3 style="color: black; font-weight: bold;">INDIE</h3>
-            <p><a href="http://drbl.in/eODP" style="color: black;">Change </a><a href="http://drbl.in/eODP" style="color: black">Delete</a></p>
+            <p><a href="http://drbl.in/eODP" style="color: black;">Cambiar </a><a href="http://drbl.in/eODP" style="color: black">Borrar</a></p>
           </div>
         </div>
       </li>
@@ -918,7 +969,7 @@
         <div class="ch-item" style="background-image: url(https://firewallcafe.com/wp-content/uploads/2017/05/20/157739/google-1495294214-02-220x220.jpg)">
           <div class="ch-info">
             <h3 style="font-weight: bold;">TECHNO</h3>
-            <p><a href="http://drbl.in/eODP">Change </a><a href="http://drbl.in/eODP">Delete</a></p>
+            <p><a href="http://drbl.in/eODP">Cambiar </a><a href="http://drbl.in/eODP">Borrar</a></p>
           </div>
         </div>
       </li>
@@ -927,7 +978,7 @@
         <div class="ch-item" style="background-image: url(https://t2.genius.com/unsafe/220x0/https%3A%2F%2Fimages.genius.com%2Fb256d7389b0fcefb08be6448ea090127.462x462x1.jpg)">
           <div class="ch-info">
             <h3 style="color: white; font-weight: bold;">RAP</h3>
-            <p><a href="http://drbl.in/eODP" style="color: white">Change </a><a href="http://drbl.in/eODP" style="color: white">Delete</a></p>
+            <p><a href="http://drbl.in/eODP" style="color: white">Cambiar </a><a href="http://drbl.in/eODP" style="color: white">Borrar</a></p>
           </div>
         </div>
       </li>
@@ -935,8 +986,8 @@
       <li>
         <div class="ch-item" style="background-image: url(https://iconalone.com/sites/default/files/styles/220x220/public/Add%20button.svg_0.png?itok=bF-qHAmZ)">
           <div class="ch-info">
-            <h3 style="color: black; font-weight: bold;">NEW</h3>
-            <p><a href="http://drbl.in/eODP" style="color: black">add</a></p>
+            <h3 style="color: black; font-weight: bold;">Nuevo</h3>
+            <p><a href="http://drbl.in/eODP" style="color: black">Añadir</a></p>
           </div>
         </div>
       </li>
@@ -1226,7 +1277,7 @@
         </div>
       </section>
       <section id="Selena">
-        <h2>Selena</h2>
+        
  <div class="panel-group"> 
     <div class="panelGen" border>
       <div class="panel-heading">
