@@ -32,166 +32,91 @@
       </div>
       <ul class="list-unstyled components">
         <li>
-          <a href="#posts" data-toggle="collapse" aria-expanded="false"><i class="glyphicon glyphicon-music"></i>  Principal</a>
-          <ul class="collapse list-unstyled" id="posts">
-            <li><a change="principal">Principal</a></li>
-            <li><a change="tendencias">Tendencias</a></li>
-            <li><a change="recomendados">Recomendados</a></li>
-          </ul>
+          <a change="principal"><i class="glyphicon glyphicon-music"></i>  Principal</a>
         </li>
         <li>
           <a change="buscar"><i class="glyphicon glyphicon-search"></i>  Buscar</a>
         </li>
         <li>
-          <a change="abc"><i class="glyphicon glyphicon-search"></i>  ABC</a>
+          <a change="recomendados"><i class="glyphicon glyphicon-star"></i>   Recomendados</a>
         </li>
       </ul>
-      <div class="panel panel-default" style="margin-top:10px;margin-left:6px;margin-right:6px;">
-        <div class="panel-body">
-          TENDENCIAS
-          <table style="border">
-            <tr>
-              <th><button>Profesional</button></th>
-              <th><button>Amateur</button></th>
-            </tr>
-            <tr>
-              <td>#1</td>
-            </tr>
-            <tr>
-              <td>#2</td>
-            </tr>
-            <tr>
-              <td>#3</td>
-            </tr>
-            <tr>
-              <td>#4</td>
-            </tr>
-            <tr>
-              <td>#5</td>
-            </tr>
-            <tr>
-              <td>#6</td>
-            </tr>
-            <tr>
-              <td>#7</td>
-            </tr>
-            <tr>
-              <td>#8</td>
-            </tr>
-            <tr>
-              <td>#9</td>
-            </tr>
-            <tr>
-              <td>#10</td>
-            </tr>
-          </table>
 
-          <a change="tendencias">Ir a tendencias</a>
+      <div class="container-fluid">
+        <ul class="nav nav-pills nav-justified">
+          <li class="active"><a data-toggle="tab" href="#t-pr" change="tendencias">Amateur</a></li>
+          <li><a data-toggle="tab" href="#t-am" change="tendencias">Profesional</a></li>
+        </ul>
 
-        </div>
-      </div>
-    </nav>
-
-    <main id="content">
-      <nav class="navbar navbar-default navbarTop">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" id="sidebarCollapse" class="navbar-btn bottonNav">
-              <span></span>
-              <span></span>
-              <span></span>
-            </button>
+        <div class="tab-content text-center" style="margin-top:20px;">
+          <div id="t-pr" class="tab-pane fade in active">
+            <div class="panel panel-info">
+              <div class="panel-heading">Profesional</div>
+              <div class="panel-body">1.Selena</div>
+              <div class="panel-body">2.Selena</div>
+              <div class="panel-body">3.Selena</div>
+              <div class="panel-body">4.Selena</div>
+              <div class="panel-body">5.Selena</div>
+              <div class="panel-body">6.Selena</div>
+              <div class="panel-body">7.Selena</div>
+              <div class="panel-body">8.Selena</div>
+              <div class="panel-body">9.Selena</div>
+              <div class="panel-body">10.Selena</div>
+            </div>
           </div>
-
-          <div class="collapse navbar-collapse">
-            <ul class="nav navbar-nav navbar-right">
-              <li>
-                <a change="editor">
-                  <i class="glyphicon glyphicon-plus"></i> Nuevo Post
-                </a>
-              </li>
-              <li>
-                <a change="mensajes" >
-                  <i class="glyphicon glyphicon-envelope"></i> Mensajes
-                </a>
-              </li>
-              <li>
-                <a change="perfil">
-                  <i class="glyphicon glyphicon-user"></i> Selena Gómez
-                </a>
-              </li>
-            </ul>
+          <div id="t-am" class="tab-pane fade">
+            <div class="panel panel-info">
+              <div class="panel-heading">Amateur</div>
+              <div class="panel-body">1.Selena</div>
+              <div class="panel-body">2.Selena</div>
+              <div class="panel-body">3.Selena</div>
+              <div class="panel-body">4.Selena</div>
+              <div class="panel-body">5.Selena</div>
+              <div class="panel-body">6.Selena</div>
+              <div class="panel-body">7.Selena</div>
+              <div class="panel-body">8.Selena</div>
+              <div class="panel-body">9.Selena</div>
+              <div class="panel-body">10.Selena</div>
+            </div>
           </div>
         </div>
       </nav>
 
-  <section id="principal">
-    <div class="panel-group">
-      <div class="panel panel-default">
-        <div class="panel-body">
-          <div class="embed-responsive embed-responsive-16by9">
-            <video class="embed-responsive-item" controls>
-              <source src="static/media.mp4" type="video/mp4">
-              </video>
+      <main id="content">
+        <nav class="navbar navbar-default navbarTop">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" id="sidebarCollapse" class="navbar-btn bottonNav">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
             </div>
-            <div class="container-fluid">
-            	<div class="row">
-	            	<div class="col-xs-16 col-sm-9">
-	            		<h3>Trailer Jurassic Park</h3>
-	            	</div>
-  					<div class="col-xs-6 col-sm-3" style="text-align:right;">
-				             <h4>Juan Perez <i class="glyphicon glyphicon-user"></i></h4>
-              				<p>12/1/2017 <i class="glyphicon glyphicon-time"></i></p>
-				            
-  					</div>
-	            </div>
+
+            <div class="collapse navbar-collapse">
+              <ul class="nav navbar-nav navbar-right">
+                <li>
+                  <a change="editor">
+                    <i class="glyphicon glyphicon-plus"></i> Nuevo Post
+                  </a>
+                </li>
+                <li>
+                  <a change="mensajes" >
+                    <i class="glyphicon glyphicon-envelope"></i> Mensajes
+                  </a>
+                </li>
+                <li>
+                  <a change="perfil">
+                    <i class="glyphicon glyphicon-user"></i> Selena Gómez
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
-        </div>
+        </nav>
 
-        <div class="panel panel-default">
-          <div class="panel-body">
-            <div class="embed-responsive embed-responsive-16by9">
-              <video class="embed-responsive-item" controls>
-                <source src="static/SelenaKygoItAintMe.mp4" type="video/mp4">
-                </video>
-              </div>
-              <div class="container-fluid">
-                <div class="row">
-	            	<div class="col-xs-16 col-sm-9">
-	            		<h3>It ain't me - Selena Gómez ft. Kygo</h3>
-	            	</div>
-  					<div class="col-xs-6 col-sm-3" style="text-align:right;">
-				             <h5>Selena Gómez <i class="glyphicon glyphicon-user"></i></h5>
-				              <p>12/10/2016 <i class="glyphicon glyphicon-time"></i></p>
-				            
-  					</div>
-	            </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="panel panel-default">
-            <div class="panel-body">
-              <div class="embed-responsive embed-responsive-16by9">
-                <video class="embed-responsive-item" controls>
-                  <source src="static/media.mp4" type="video/mp4">
-                  </video>
-                </div>
-                <div class="container-fluid ">
-                  <div class="row">
-	            	<div class="col-xs-16 col-sm-9">
-	            		<h3>Trailer Jurassic Park</h3>
-	            	</div>
-  					<div class="col-xs-6 col-sm-3" style="text-align:right;">
-				             <h4>Juan Perez <i class="glyphicon glyphicon-user"></i></h4>
-              				<p>12/1/2017 <i class="glyphicon glyphicon-time"></i></p>
-				            
-  					</div>
-	            </div>
-                </div>
-              </div>
-            </div>
+        <section id="principal">
+          <div class="panel-group">
 
             <div class="panel panel-default">
               <div class="panel-body">
@@ -200,17 +125,18 @@
                     <source src="static/media.mp4" type="video/mp4">
                     </video>
                   </div>
-                  <div class="container-fluid ">
+                  <div class="container-fluid">
                     <div class="row">
-	            	<div class="col-xs-16 col-sm-9">
-	            		<h3>Trailer Jurassic Park</h3>
-	            	</div>
-  					<div class="col-xs-6 col-sm-3" style="text-align:right;">
-				             <h4>Juan Perez <i class="glyphicon glyphicon-user"></i></h4>
-              				<p>12/1/2017 <i class="glyphicon glyphicon-time"></i></p>
-				            
-  					</div>
-	            </div>
+                      <div class="col-xs-16 col-sm-9">
+                        <h3>Trailer Jurassic Park</h3>
+                        <p><i class="glyphicon glyphicon-eye-open"></i>  19000</p>
+                      </div>
+                      <div class="col-xs-6 col-sm-3" style="text-align:right;">
+                        <h4>Juan Perez <i class="glyphicon glyphicon-user"></i></h4>
+                        <p>12/1/2017 <i class="glyphicon glyphicon-time"></i></p>
+                        <button type="button" class="btn btn-info"><i class="glyphicon glyphicon-thumbs-up"></i> 700</button>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -224,15 +150,16 @@
                     </div>
                     <div class="container-fluid">
                       <div class="row">
-	            	<div class="col-xs-16 col-sm-9">
-	            		<h3>Trailer Jurassic Park</h3>
-	            	</div>
-  					<div class="col-xs-6 col-sm-3" style="text-align:right;">
-				             <h4>Juan Perez <i class="glyphicon glyphicon-user"></i></h4>
-              				<p>12/1/2017 <i class="glyphicon glyphicon-time"></i></p>
-				            
-  					</div>
-	            </div>
+                        <div class="col-xs-16 col-sm-9">
+                          <h3>Trailer Jurassic Park</h3>
+                          <p><i class="glyphicon glyphicon-eye-open"></i>  19000</p>
+                        </div>
+                        <div class="col-xs-6 col-sm-3" style="text-align:right;">
+                          <h4>Juan Perez <i class="glyphicon glyphicon-user"></i></h4>
+                          <p>12/1/2017 <i class="glyphicon glyphicon-time"></i></p>
+                          <button type="button" class="btn btn-info"><i class="glyphicon glyphicon-thumbs-up"></i> 700</button>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -244,100 +171,18 @@
                         <source src="static/media.mp4" type="video/mp4">
                         </video>
                       </div>
-                      <div class="container-fluid ">
+                      <div class="container-fluid">
                         <div class="row">
-	            	<div class="col-xs-16 col-sm-9">
-	            		<h3>Trailer Jurassic Park</h3>
-	            	</div>
-  					<div class="col-xs-6 col-sm-3" style="text-align:right;">
-				             <h4>Juan Perez <i class="glyphicon glyphicon-user"></i></h4>
-              				<p>12/1/2017 <i class="glyphicon glyphicon-time"></i></p>
-				            
-  					</div>
-	            </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  
-                    </section>
-
-    <section id="tendencias">
-      <h2>Tendencias</h2>
-      <div class="panel-group">
-
-        <div class="panel panel-default">
-           <div class="panel-body">
-	          <div class="embed-responsive embed-responsive-16by9">
-	            <video class="embed-responsive-item" controls>
-	              <source src="static/SelenaKygoItAintMe.mp4" type="video/mp4">
-	              </video>
-	            </div>
-	            <div class="row">
-	            	<div class="col-xs-16 col-sm-9">
-	            		<h4><h2>#1</h2> It Ain't Me - Selena Gómez ft. Kygo</h4>
-	            	</div>
-  					<div class="col-xs-6 col-sm-3" style="text-align:right;">
-				              <h5>Selena Gómez <i class="glyphicon glyphicon-user"></i></h5>
-				              <p>12/10/2016 <i class="glyphicon glyphicon-time"></i></p>
-				            
-  					</div>
-	            </div>
-	          </div>
-          </div>
-
-          <div class="panel panel-default">
-            <div class="panel-body">
-              <div class="embed-responsive embed-responsive-16by9">
-                <video class="embed-responsive-item" controls>
-                  <source src="static/media.mp4" type="video/mp4">
-                  </video>
-                </div>
-                <div class="container-fluid postData">
-                  <h4>Juan Perez <i class="glyphicon glyphicon-user"></i></h4>
-                  <p>12/1/2017 <i class="glyphicon glyphicon-time"></i></p>
-                </div>
-              </div>
-            </div>
-
-            <div class="panel panel-default">
-              <div class="panel-body">
-                <div class="embed-responsive embed-responsive-16by9">
-                  <video class="embed-responsive-item" controls>
-                    <source src="static/media.mp4" type="video/mp4">
-                    </video>
-                  </div>
-                  <div class="container-fluid postData">
-                    <h4>Juan Perez <i class="glyphicon glyphicon-user"></i></h4>
-                    <p>12/1/2017 <i class="glyphicon glyphicon-time"></i></p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="panel panel-default">
-                <div class="panel-body">
-                  <div class="embed-responsive embed-responsive-16by9">
-                    <video class="embed-responsive-item" controls>
-                      <source src="static/media.mp4" type="video/mp4">
-                      </video>
-                    </div>
-                    <div class="container-fluid postData">
-                      <h4>Juan Perez <i class="glyphicon glyphicon-user"></i></h4>
-                      <p>12/1/2017 <i class="glyphicon glyphicon-time"></i></p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="panel panel-default">
-                  <div class="panel-body">
-                    <div class="embed-responsive embed-responsive-16by9">
-                      <video class="embed-responsive-item" controls>
-                        <source src="static/media.mp4" type="video/mp4">
-                        </video>
-                      </div>
-                      <div class="container-fluid postData">
-                        <h4>Juan Perez <i class="glyphicon glyphicon-user"></i></h4>
-                        <p>12/1/2017 <i class="glyphicon glyphicon-time"></i></p>
+                          <div class="col-xs-16 col-sm-9">
+                            <h3>Trailer Jurassic Park</h3>
+                            <p><i class="glyphicon glyphicon-eye-open"></i>  19000</p>
+                          </div>
+                          <div class="col-xs-6 col-sm-3" style="text-align:right;">
+                            <h4>Juan Perez <i class="glyphicon glyphicon-user"></i></h4>
+                            <p>12/1/2017 <i class="glyphicon glyphicon-time"></i></p>
+                            <button type="button" class="btn btn-info"><i class="glyphicon glyphicon-thumbs-up"></i> 700</button>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -349,9 +194,18 @@
                           <source src="static/media.mp4" type="video/mp4">
                           </video>
                         </div>
-                        <div class="container-fluid postData">
-                          <h4>Juan Perez <i class="glyphicon glyphicon-user"></i></h4>
-                          <p>12/1/2017 <i class="glyphicon glyphicon-time"></i></p>
+                        <div class="container-fluid">
+                          <div class="row">
+                            <div class="col-xs-16 col-sm-9">
+                              <h3>Trailer Jurassic Park</h3>
+                              <p><i class="glyphicon glyphicon-eye-open"></i>  19000</p>
+                            </div>
+                            <div class="col-xs-6 col-sm-3" style="text-align:right;">
+                              <h4>Juan Perez <i class="glyphicon glyphicon-user"></i></h4>
+                              <p>12/1/2017 <i class="glyphicon glyphicon-time"></i></p>
+                              <button type="button" class="btn btn-info"><i class="glyphicon glyphicon-thumbs-up"></i> 700</button>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -363,9 +217,18 @@
                             <source src="static/media.mp4" type="video/mp4">
                             </video>
                           </div>
-                          <div class="container-fluid postData">
-                            <h4>Juan Perez <i class="glyphicon glyphicon-user"></i></h4>
-                            <p>12/1/2017 <i class="glyphicon glyphicon-time"></i></p>
+                          <div class="container-fluid">
+                            <div class="row">
+                              <div class="col-xs-16 col-sm-9">
+                                <h3>Trailer Jurassic Park</h3>
+                                <p><i class="glyphicon glyphicon-eye-open"></i>  19000</p>
+                              </div>
+                              <div class="col-xs-6 col-sm-3" style="text-align:right;">
+                                <h4>Juan Perez <i class="glyphicon glyphicon-user"></i></h4>
+                                <p>12/1/2017 <i class="glyphicon glyphicon-time"></i></p>
+                                <button type="button" class="btn btn-info"><i class="glyphicon glyphicon-thumbs-up"></i> 700</button>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -377,9 +240,18 @@
                               <source src="static/media.mp4" type="video/mp4">
                               </video>
                             </div>
-                            <div class="container-fluid postData">
-                              <h4>Juan Perez <i class="glyphicon glyphicon-user"></i></h4>
-                              <p>12/1/2017 <i class="glyphicon glyphicon-time"></i></p>
+                            <div class="container-fluid">
+                              <div class="row">
+                                <div class="col-xs-16 col-sm-9">
+                                  <h3>Trailer Jurassic Park</h3>
+                                  <p><i class="glyphicon glyphicon-eye-open"></i>  19000</p>
+                                </div>
+                                <div class="col-xs-6 col-sm-3" style="text-align:right;">
+                                  <h4>Juan Perez <i class="glyphicon glyphicon-user"></i></h4>
+                                  <p>12/1/2017 <i class="glyphicon glyphicon-time"></i></p>
+                                  <button type="button" class="btn btn-info"><i class="glyphicon glyphicon-thumbs-up"></i> 700</button>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -391,9 +263,18 @@
                                 <source src="static/media.mp4" type="video/mp4">
                                 </video>
                               </div>
-                              <div class="container-fluid postData">
-                                <h4>Juan Perez <i class="glyphicon glyphicon-user"></i></h4>
-                                <p>12/1/2017 <i class="glyphicon glyphicon-time"></i></p>
+                              <div class="container-fluid">
+                                <div class="row">
+                                  <div class="col-xs-16 col-sm-9">
+                                    <h3>Trailer Jurassic Park</h3>
+                                    <p><i class="glyphicon glyphicon-eye-open"></i>  19000</p>
+                                  </div>
+                                  <div class="col-xs-6 col-sm-3" style="text-align:right;">
+                                    <h4>Juan Perez <i class="glyphicon glyphicon-user"></i></h4>
+                                    <p>12/1/2017 <i class="glyphicon glyphicon-time"></i></p>
+                                    <button type="button" class="btn btn-info"><i class="glyphicon glyphicon-thumbs-up"></i> 700</button>
+                                  </div>
+                                </div>
                               </div>
                             </div>
                           </div>
@@ -401,914 +282,1237 @@
                         </div>
                       </section>
 
-  <section id="recomendados">
-    <h2>Recomendados para ti</h2>
-    <div class="panel-group">
+                      <section id="tendencias">
+                        <h2>Tendencias</h2>
+                        <div class="panel-group">
 
-      <div class="panel panel-default">
-        <div class="panel-body">
-          <div class="embed-responsive embed-responsive-16by9">
-            <video class="embed-responsive-item" controls>
-              <source src="static/media.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="container-fluid postData">
-              <h4>Juan Perez <i class="glyphicon glyphicon-user"></i></h4>
-              <p>12/1/2017 <i class="glyphicon glyphicon-time"></i></p>
-            </div>
-          </div>
-        </div>
+                          <div class="panel panel-default">
+                            <div class="panel-body">
+                              <div class="embed-responsive embed-responsive-16by9">
+                                <video class="embed-responsive-item" controls>
+                                  <source src="static/SelenaKygoItAintMe.mp4" type="video/mp4">
+                                  </video>
+                                </div>
+                                <div class="row">
+                                  <div class="col-xs-16 col-sm-9">
+                                    <h4><h2>#1</h2> It Ain't Me - Selena Gómez ft. Kygo</h4>
+                                    <p><i class="glyphicon glyphicon-eye-open"></i>  19000</p>
+                                  </div>
+                                  <div class="col-xs-6 col-sm-3" style="text-align:right;">
+                                    <h5>Selena Gómez <i class="glyphicon glyphicon-user"></i></h5>
+                                    <p>12/10/2016 <i class="glyphicon glyphicon-time"></i></p>
+                                    <button type="button" class="btn btn-info"><i class="glyphicon glyphicon-thumbs-up"></i> 700</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
 
-        <div class="panel panel-default">
-          <div class="panel-body">
-            <div class="embed-responsive embed-responsive-16by9">
-              <video class="embed-responsive-item" controls>
-                <source src="static/media.mp4" type="video/mp4">
-                </video>
-              </div>
-              <div class="container-fluid postData">
-                <h4>Juan Perez <i class="glyphicon glyphicon-user"></i></h4>
-                <p>12/1/2017 <i class="glyphicon glyphicon-time"></i></p>
-              </div>
-            </div>
-          </div>
+                            <div class="panel panel-default">
+                              <div class="panel-body">
+                                <div class="embed-responsive embed-responsive-16by9">
+                                  <video class="embed-responsive-item" controls>
+                                    <source src="static/SelenaKygoItAintMe.mp4" type="video/mp4">
+                                    </video>
+                                  </div>
+                                  <div class="row">
+                                    <div class="col-xs-16 col-sm-9">
+                                      <h4><h2>#1</h2> It Ain't Me - Selena Gómez ft. Kygo</h4>
+                                      <p><i class="glyphicon glyphicon-eye-open"></i>  19000</p>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-3" style="text-align:right;">
+                                      <h5>Selena Gómez <i class="glyphicon glyphicon-user"></i></h5>
+                                      <p>12/10/2016 <i class="glyphicon glyphicon-time"></i></p>
+                                      <button type="button" class="btn btn-info"><i class="glyphicon glyphicon-thumbs-up"></i> 700</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
 
-          <div class="panel panel-default">
-            <div class="panel-body">
-              <div class="embed-responsive embed-responsive-16by9">
-                <video class="embed-responsive-item" controls>
-                  <source src="static/media.mp4" type="video/mp4">
-                  </video>
-                </div>
-                <div class="container-fluid postData">
-                  <h4>Juan Perez <i class="glyphicon glyphicon-user"></i></h4>
-                  <p>12/1/2017 <i class="glyphicon glyphicon-time"></i></p>
-                </div>
-              </div>
-            </div>
+                              <div class="panel panel-default">
+                                <div class="panel-body">
+                                  <div class="embed-responsive embed-responsive-16by9">
+                                    <video class="embed-responsive-item" controls>
+                                      <source src="static/SelenaKygoItAintMe.mp4" type="video/mp4">
+                                      </video>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-xs-16 col-sm-9">
+                                        <h4><h2>#1</h2> It Ain't Me - Selena Gómez ft. Kygo</h4>
+                                        <p><i class="glyphicon glyphicon-eye-open"></i>  19000</p>
+                                      </div>
+                                      <div class="col-xs-6 col-sm-3" style="text-align:right;">
+                                        <h5>Selena Gómez <i class="glyphicon glyphicon-user"></i></h5>
+                                        <p>12/10/2016 <i class="glyphicon glyphicon-time"></i></p>
+                                        <button type="button" class="btn btn-info"><i class="glyphicon glyphicon-thumbs-up"></i> 700</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
 
-            <div class="panel panel-default">
-              <div class="panel-body">
-                <div class="embed-responsive embed-responsive-16by9">
-                  <video class="embed-responsive-item" controls>
-                    <source src="static/media.mp4" type="video/mp4">
-                    </video>
-                  </div>
-                  <div class="container-fluid postData">
-                    <h4>Juan Perez <i class="glyphicon glyphicon-user"></i></h4>
-                    <p>12/1/2017 <i class="glyphicon glyphicon-time"></i></p>
-                  </div>
-                </div>
-              </div>
+                                <div class="panel panel-default">
+                                  <div class="panel-body">
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                      <video class="embed-responsive-item" controls>
+                                        <source src="static/SelenaKygoItAintMe.mp4" type="video/mp4">
+                                        </video>
+                                      </div>
+                                      <div class="row">
+                                        <div class="col-xs-16 col-sm-9">
+                                          <h4><h2>#1</h2> It Ain't Me - Selena Gómez ft. Kygo</h4>
+                                          <p><i class="glyphicon glyphicon-eye-open"></i>  19000</p>
+                                        </div>
+                                        <div class="col-xs-6 col-sm-3" style="text-align:right;">
+                                          <h5>Selena Gómez <i class="glyphicon glyphicon-user"></i></h5>
+                                          <p>12/10/2016 <i class="glyphicon glyphicon-time"></i></p>
+                                          <button type="button" class="btn btn-info"><i class="glyphicon glyphicon-thumbs-up"></i> 700</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
 
-              <div class="panel panel-default">
-                <div class="panel-body">
-                  <div class="embed-responsive embed-responsive-16by9">
-                    <video class="embed-responsive-item" controls>
-                      <source src="static/media.mp4" type="video/mp4">
-                      </video>
-                    </div>
-                    <div class="container-fluid postData">
-                      <h4>Juan Perez <i class="glyphicon glyphicon-user"></i></h4>
-                      <p>12/1/2017 <i class="glyphicon glyphicon-time"></i></p>
-                    </div>
-                  </div>
-                </div>
+                                  <div class="panel panel-default">
+                                    <div class="panel-body">
+                                      <div class="embed-responsive embed-responsive-16by9">
+                                        <video class="embed-responsive-item" controls>
+                                          <source src="static/SelenaKygoItAintMe.mp4" type="video/mp4">
+                                          </video>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-xs-16 col-sm-9">
+                                            <h4><h2>#1</h2> It Ain't Me - Selena Gómez ft. Kygo</h4>
+                                            <p><i class="glyphicon glyphicon-eye-open"></i>  19000</p>
+                                          </div>
+                                          <div class="col-xs-6 col-sm-3" style="text-align:right;">
+                                            <h5>Selena Gómez <i class="glyphicon glyphicon-user"></i></h5>
+                                            <p>12/10/2016 <i class="glyphicon glyphicon-time"></i></p>
+                                            <button type="button" class="btn btn-info"><i class="glyphicon glyphicon-thumbs-up"></i> 700</button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
 
-                <div class="panel panel-default">
-                  <div class="panel-body">
-                    <div class="embed-responsive embed-responsive-16by9">
-                      <video class="embed-responsive-item" controls>
-                        <source src="static/media.mp4" type="video/mp4">
-                        </video>
-                      </div>
-                      <div class="container-fluid postData">
-                        <h4>Juan Perez <i class="glyphicon glyphicon-user"></i></h4>
-                        <p>12/1/2017 <i class="glyphicon glyphicon-time"></i></p>
-                      </div>
-                    </div>
-                  </div>
+                                    <div class="panel panel-default">
+                                      <div class="panel-body">
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                          <video class="embed-responsive-item" controls>
+                                            <source src="static/SelenaKygoItAintMe.mp4" type="video/mp4">
+                                            </video>
+                                          </div>
+                                          <div class="row">
+                                            <div class="col-xs-16 col-sm-9">
+                                              <h4><h2>#1</h2> It Ain't Me - Selena Gómez ft. Kygo</h4>
+                                              <p><i class="glyphicon glyphicon-eye-open"></i>  19000</p>
+                                            </div>
+                                            <div class="col-xs-6 col-sm-3" style="text-align:right;">
+                                              <h5>Selena Gómez <i class="glyphicon glyphicon-user"></i></h5>
+                                              <p>12/10/2016 <i class="glyphicon glyphicon-time"></i></p>
+                                              <button type="button" class="btn btn-info"><i class="glyphicon glyphicon-thumbs-up"></i> 700</button>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
 
-                  <div class="panel panel-default">
-                    <div class="panel-body">
-                      <div class="embed-responsive embed-responsive-16by9">
-                        <video class="embed-responsive-item" controls>
-                          <source src="static/media.mp4" type="video/mp4">
-                          </video>
-                        </div>
-                        <div class="container-fluid postData">
-                          <h4>Juan Perez <i class="glyphicon glyphicon-user"></i></h4>
-                          <p>12/1/2017 <i class="glyphicon glyphicon-time"></i></p>
-                        </div>
-                      </div>
-                    </div>
+                                      <div class="panel panel-default">
+                                        <div class="panel-body">
+                                          <div class="embed-responsive embed-responsive-16by9">
+                                            <video class="embed-responsive-item" controls>
+                                              <source src="static/SelenaKygoItAintMe.mp4" type="video/mp4">
+                                              </video>
+                                            </div>
+                                            <div class="row">
+                                              <div class="col-xs-16 col-sm-9">
+                                                <h4><h2>#1</h2> It Ain't Me - Selena Gómez ft. Kygo</h4>
+                                                <p><i class="glyphicon glyphicon-eye-open"></i>  19000</p>
+                                              </div>
+                                              <div class="col-xs-6 col-sm-3" style="text-align:right;">
+                                                <h5>Selena Gómez <i class="glyphicon glyphicon-user"></i></h5>
+                                                <p>12/10/2016 <i class="glyphicon glyphicon-time"></i></p>
+                                                <button type="button" class="btn btn-info"><i class="glyphicon glyphicon-thumbs-up"></i> 700</button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
 
-                    <div class="panel panel-default">
-                      <div class="panel-body">
-                        <div class="embed-responsive embed-responsive-16by9">
-                          <video class="embed-responsive-item" controls>
-                            <source src="static/media.mp4" type="video/mp4">
-                            </video>
-                          </div>
-                          <div class="container-fluid postData">
-                            <h4>Juan Perez <i class="glyphicon glyphicon-user"></i></h4>
-                            <p>12/1/2017 <i class="glyphicon glyphicon-time"></i></p>
-                          </div>
-                        </div>
-                      </div>
+                                        <div class="panel panel-default">
+                                          <div class="panel-body">
+                                            <div class="embed-responsive embed-responsive-16by9">
+                                              <video class="embed-responsive-item" controls>
+                                                <source src="static/SelenaKygoItAintMe.mp4" type="video/mp4">
+                                                </video>
+                                              </div>
+                                              <div class="row">
+                                                <div class="col-xs-16 col-sm-9">
+                                                  <h4><h2>#1</h2> It Ain't Me - Selena Gómez ft. Kygo</h4>
+                                                  <p><i class="glyphicon glyphicon-eye-open"></i>  19000</p>
+                                                </div>
+                                                <div class="col-xs-6 col-sm-3" style="text-align:right;">
+                                                  <h5>Selena Gómez <i class="glyphicon glyphicon-user"></i></h5>
+                                                  <p>12/10/2016 <i class="glyphicon glyphicon-time"></i></p>
+                                                  <button type="button" class="btn btn-info"><i class="glyphicon glyphicon-thumbs-up"></i> 700</button>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
 
-                      <div class="panel panel-default">
-                        <div class="panel-body">
-                          <div class="embed-responsive embed-responsive-16by9">
-                            <video class="embed-responsive-item" controls>
-                              <source src="static/media.mp4" type="video/mp4">
-                              </video>
-                            </div>
-                            <div class="container-fluid postData">
-                              <h4>Juan Perez <i class="glyphicon glyphicon-user"></i></h4>
-                              <p>12/1/2017 <i class="glyphicon glyphicon-time"></i></p>
-                            </div>
-                          </div>
-                        </div>
 
-                      </div>
-                    </section>
 
-                    <section id="buscar">
-                      <h2>Buscar</h2>
-                      <div class="panel panel-default">
-                        <div class="panel-body">
-                          <form class="form-horizontal" action="">
-                            <input placeholder="Autor" class="form-control" type="text"/><br>
-                            <button class="btn btn-primary">Buscar</button>
-                          </form>
-                        </div>
-                      </div>
 
-                      <div class="panel panel-default">
-                        <div class="panel-body">
-                          RESULTADO, ESTILO PERFIL O ALGO
-                        </div>
-                      </div>
 
-                    </section>
+                                        </div>
+                                      </section>
 
-                    <section id="mensajes">
-                      <h2>Mensajes</h2>
-                      <div class="panel-group" style="overflow-y:scroll;">
-                        <div class="panel panel-default">
-                          <div class="panel-body">
-                            <div class="row">
-                             <div class="col-sm-2 col-md-2 ">
-                              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Selena_Gomez_-_Walmart_Soundcheck_Concert.jpg/492px-Selena_Gomez_-_Walmart_Soundcheck_Concert.jpg" class="img-circle" alt="profile pic"  width="50" height="50">
-                            </div>
-                            <div class="col-sm-10 col-md-10">
-                              <a change="Selena">
-                                <h4><b>Selena Gómez</b></h4>
-                                <p>Que tal guapi</p>
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="panel panel-default">
-                        <div class="panel-body">
-                          <div class="row">
-                            <div class="col-sm-2 col-md-2 ima">
-                              <img src="http://images6.fanpop.com/image/polls/1271000/1271423_1377665739255_full.png?v=1377665877" class="img-circle" alt="profile pic" width="50" height="50">
-                            </div>
-                            <div class="col-sm-10 col-md-10 ima">
-                              <h4><b>Taylor Swift</b></h4>
-                              <p>Escucha mi nuevo disco</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="panel panel-default">
-                        <div class="panel-body">
-                          <div class="row">
-                            <div class="col-sm-2 col-md-2 ima">
-                              <img src="https://www.hola.com/imagenes/actualidad/2017090899092/kiko-rivera-caribe/0-485-320/kiko-t.jpg" class="img-circle" alt="profile pic" width="50" height="50">
-                            </div>
-                            <div class="col-sm-10 col-md-10 ima">
-                              <h4><b>Kiko Rivera</b></h4>  
-                              <p>Que tal todo</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="panel panel-default">
-                        <div class="panel-body">
-                          <div class="row">
-                            <div class="col-sm-2 col-md-2 ima">
-                              <img src="http://los40es00.epimg.net/los40/imagenes/2017/01/17/album/1484675309_894438_1484675936_album_normal.jpg" class="img-circle" alt="profile pic" width="50" height="50">
-                            </div>
-                            <div class="col-sm-10 col-md-10 ima">
-                              <h4><b>Demi Lovato</b></h4>  
-                              <p>Hi!!!</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="panel panel-default">
-                        <div class="panel-body">
-                          <div class="row">
-                            <div class="col-sm-2 col-md-2 ima">
-                              <img src="https://i.axs.com/2016/07/promoted-media-optimized_5776cc52b3816.jpg" class="img-circle" alt="profile pic" width="50" height="50">
-                            </div>
-                            <div class="col-sm-10 col-md-10 ima">
-                              <h4><b>Justin Bieber</b></h4>  
-                              <p>Let's make a collab!!</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="panel panel-default">
-                        <div class="panel-body">
-                          <div class="row">
-                            <div class="col-sm-2 col-md-2 ima">
-                              <img src="http://i.telegraph.co.uk/multimedia/archive/02510/justin2_2510378b.jpg" class="img-circle" alt="profile pic" width="50" height="50">
-                            </div>
-                            <div class="col-sm-10 col-md-10 ima">
-                              <h4><b>Justin Timberlake</b></h4>  
-                              <p>Holaaaa!!</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                                                              <!-- 
+                                      <section id="recomendados">
+                                        <h2>Recomendados para ti</h2>
+                                        <div class="panel-group">
+
+                                          <div class="panel panel-default">
+                                            <div class="panel-body">
+                                              <div class="embed-responsive embed-responsive-16by9">
+                                                <video class="embed-responsive-item" controls>
+                                                  <source src="static/media.mp4" type="video/mp4">
+                                                  </video>
+                                                </div>
+                                                <div class="container-fluid">
+                                                  <div class="row">
+                                                    <div class="col-xs-16 col-sm-9">
+                                                      <h3>Trailer Jurassic Park</h3>
+                                                      <p><i class="glyphicon glyphicon-eye-open"></i>  19000</p>
+                                                    </div>
+                                                    <div class="col-xs-6 col-sm-3" style="text-align:right;">
+                                                      <h4>Juan Perez <i class="glyphicon glyphicon-user"></i></h4>
+                                                      <p>12/1/2017 <i class="glyphicon glyphicon-time"></i></p>
+                                                      <button type="button" class="btn btn-info"><i class="glyphicon glyphicon-thumbs-up"></i> 700</button>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+
+                                            <div class="panel panel-default">
+                                              <div class="panel-body">
+                                                <div class="embed-responsive embed-responsive-16by9">
+                                                  <video class="embed-responsive-item" controls>
+                                                    <source src="static/media.mp4" type="video/mp4">
+                                                    </video>
+                                                  </div>
+                                                  <div class="container-fluid">
+                                                    <div class="row">
+                                                      <div class="col-xs-16 col-sm-9">
+                                                        <h3>Trailer Jurassic Park</h3>
+                                                        <p><i class="glyphicon glyphicon-eye-open"></i>  19000</p>
+                                                      </div>
+                                                      <div class="col-xs-6 col-sm-3" style="text-align:right;">
+                                                        <h4>Juan Perez <i class="glyphicon glyphicon-user"></i></h4>
+                                                        <p>12/1/2017 <i class="glyphicon glyphicon-time"></i></p>
+                                                        <button type="button" class="btn btn-info"><i class="glyphicon glyphicon-thumbs-up"></i> 700</button>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+
+                                              <div class="panel panel-default">
+                                                <div class="panel-body">
+                                                  <div class="embed-responsive embed-responsive-16by9">
+                                                    <video class="embed-responsive-item" controls>
+                                                      <source src="static/media.mp4" type="video/mp4">
+                                                      </video>
+                                                    </div>
+                                                    <div class="container-fluid">
+                                                      <div class="row">
+                                                        <div class="col-xs-16 col-sm-9">
+                                                          <h3>Trailer Jurassic Park</h3>
+                                                          <p><i class="glyphicon glyphicon-eye-open"></i>  19000</p>
+                                                        </div>
+                                                        <div class="col-xs-6 col-sm-3" style="text-align:right;">
+                                                          <h4>Juan Perez <i class="glyphicon glyphicon-user"></i></h4>
+                                                          <p>12/1/2017 <i class="glyphicon glyphicon-time"></i></p>
+                                                          <button type="button" class="btn btn-info"><i class="glyphicon glyphicon-thumbs-up"></i> 700</button>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+
+                                                <div class="panel panel-default">
+                                                  <div class="panel-body">
+                                                    <div class="embed-responsive embed-responsive-16by9">
+                                                      <video class="embed-responsive-item" controls>
+                                                        <source src="static/media.mp4" type="video/mp4">
+                                                        </video>
+                                                      </div>
+                                                      <div class="container-fluid">
+                                                        <div class="row">
+                                                          <div class="col-xs-16 col-sm-9">
+                                                            <h3>Trailer Jurassic Park</h3>
+                                                            <p><i class="glyphicon glyphicon-eye-open"></i>  19000</p>
+                                                          </div>
+                                                          <div class="col-xs-6 col-sm-3" style="text-align:right;">
+                                                            <h4>Juan Perez <i class="glyphicon glyphicon-user"></i></h4>
+                                                            <p>12/1/2017 <i class="glyphicon glyphicon-time"></i></p>
+                                                            <button type="button" class="btn btn-info"><i class="glyphicon glyphicon-thumbs-up"></i> 700</button>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+
+                                                  <div class="panel panel-default">
+                                                    <div class="panel-body">
+                                                      <div class="embed-responsive embed-responsive-16by9">
+                                                        <video class="embed-responsive-item" controls>
+                                                          <source src="static/media.mp4" type="video/mp4">
+                                                          </video>
+                                                        </div>
+                                                        <div class="container-fluid">
+                                                          <div class="row">
+                                                            <div class="col-xs-16 col-sm-9">
+                                                              <h3>Trailer Jurassic Park</h3>
+                                                              <p><i class="glyphicon glyphicon-eye-open"></i>  19000</p>
+                                                            </div>
+                                                            <div class="col-xs-6 col-sm-3" style="text-align:right;">
+                                                              <h4>Juan Perez <i class="glyphicon glyphicon-user"></i></h4>
+                                                              <p>12/1/2017 <i class="glyphicon glyphicon-time"></i></p>
+                                                              <button type="button" class="btn btn-info"><i class="glyphicon glyphicon-thumbs-up"></i> 700</button>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+
+                                                    <div class="panel panel-default">
+                                                      <div class="panel-body">
+                                                        <div class="embed-responsive embed-responsive-16by9">
+                                                          <video class="embed-responsive-item" controls>
+                                                            <source src="static/media.mp4" type="video/mp4">
+                                                            </video>
+                                                          </div>
+                                                          <div class="container-fluid">
+                                                            <div class="row">
+                                                              <div class="col-xs-16 col-sm-9">
+                                                                <h3>Trailer Jurassic Park</h3>
+                                                                <p><i class="glyphicon glyphicon-eye-open"></i>  19000</p>
+                                                              </div>
+                                                              <div class="col-xs-6 col-sm-3" style="text-align:right;">
+                                                                <h4>Juan Perez <i class="glyphicon glyphicon-user"></i></h4>
+                                                                <p>12/1/2017 <i class="glyphicon glyphicon-time"></i></p>
+                                                                <button type="button" class="btn btn-info"><i class="glyphicon glyphicon-thumbs-up"></i> 700</button>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+
+                                                      <div class="panel panel-default">
+                                                        <div class="panel-body">
+                                                          <div class="embed-responsive embed-responsive-16by9">
+                                                            <video class="embed-responsive-item" controls>
+                                                              <source src="static/media.mp4" type="video/mp4">
+                                                              </video>
+                                                            </div>
+                                                            <div class="container-fluid">
+                                                              <div class="row">
+                                                                <div class="col-xs-16 col-sm-9">
+                                                                  <h3>Trailer Jurassic Park</h3>
+                                                                  <p><i class="glyphicon glyphicon-eye-open"></i>  19000</p>
+                                                                </div>
+                                                                <div class="col-xs-6 col-sm-3" style="text-align:right;">
+                                                                  <h4>Juan Perez <i class="glyphicon glyphicon-user"></i></h4>
+                                                                  <p>12/1/2017 <i class="glyphicon glyphicon-time"></i></p>
+                                                                  <button type="button" class="btn btn-info"><i class="glyphicon glyphicon-thumbs-up"></i> 700</button>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+
+                                                        <div class="panel panel-default">
+                                                          <div class="panel-body">
+                                                            <div class="embed-responsive embed-responsive-16by9">
+                                                              <video class="embed-responsive-item" controls>
+                                                                <source src="static/media.mp4" type="video/mp4">
+                                                                </video>
+                                                              </div>
+                                                              <div class="container-fluid">
+                                                                <div class="row">
+                                                                  <div class="col-xs-16 col-sm-9">
+                                                                    <h3>Trailer Jurassic Park</h3>
+                                                                    <p><i class="glyphicon glyphicon-eye-open"></i>  19000</p>
+                                                                  </div>
+                                                                  <div class="col-xs-6 col-sm-3" style="text-align:right;">
+                                                                    <h4>Juan Perez <i class="glyphicon glyphicon-user"></i></h4>
+                                                                    <p>12/1/2017 <i class="glyphicon glyphicon-time"></i></p>
+                                                                    <button type="button" class="btn btn-info"><i class="glyphicon glyphicon-thumbs-up"></i> 700</button>
+                                                                  </div>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+
+                                                          <div class="panel panel-default">
+                                                            <div class="panel-body">
+                                                              <div class="embed-responsive embed-responsive-16by9">
+                                                                <video class="embed-responsive-item" controls>
+                                                                  <source src="static/media.mp4" type="video/mp4">
+                                                                  </video>
+                                                                </div>
+                                                                <div class="container-fluid">
+                                                                  <div class="row">
+                                                                    <div class="col-xs-16 col-sm-9">
+                                                                      <h3>Trailer Jurassic Park</h3>
+                                                                      <p><i class="glyphicon glyphicon-eye-open"></i>  19000</p>
+                                                                    </div>
+                                                                    <div class="col-xs-6 col-sm-3" style="text-align:right;">
+                                                                      <h4>Juan Perez <i class="glyphicon glyphicon-user"></i></h4>
+                                                                      <p>12/1/2017 <i class="glyphicon glyphicon-time"></i></p>
+                                                                      <button type="button" class="btn btn-info"><i class="glyphicon glyphicon-thumbs-up"></i> 700</button>
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+
+                                                            <div class="panel panel-default">
+                                                              <div class="panel-body">
+                                                                <div class="embed-responsive embed-responsive-16by9">
+                                                                  <video class="embed-responsive-item" controls>
+                                                                    <source src="static/media.mp4" type="video/mp4">
+                                                                    </video>
+                                                                  </div>
+                                                                  <div class="container-fluid">
+                                                                    <div class="row">
+                                                                      <div class="col-xs-16 col-sm-9">
+                                                                        <h3>Trailer Jurassic Park</h3>
+                                                                        <p><i class="glyphicon glyphicon-eye-open"></i>  19000</p>
+                                                                      </div>
+                                                                      <div class="col-xs-6 col-sm-3" style="text-align:right;">
+                                                                        <h4>Juan Perez <i class="glyphicon glyphicon-user"></i></h4>
+                                                                        <p>12/1/2017 <i class="glyphicon glyphicon-time"></i></p>
+                                                                        <button type="button" class="btn btn-info"><i class="glyphicon glyphicon-thumbs-up"></i> 700</button>
+                                                                      </div>
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                          </section>
+
+                                                          <section id="buscar">
+                                                            <h2>Buscar</h2>
+                                                            <div class="panel panel-default">
+                                                              <div class="panel-body">
+                                                                <form class="form-horizontal" action="">
+                                                                  <input placeholder="Autor" class="form-control" type="text"/><br>
+                                                                  <button class="btn btn-primary" id="search-button">Buscar</button>
+                                                                </form>
+                                                              </div>
+                                                            </div>
+
+                                                            <div class="panel panel-default">
+                                                              <div class="panel-body" id="ssp">
+                                                                <div class="row">
+                                                                  <div class="col-sm-3 col-md-2 ima">
+                                                                    <p style="text-align:center; margin-top:20px;"><img src="https://orig00.deviantart.net/c0c0/f/2013/182/e/8/selena_gomez_icon_by_withswag-d6bgvc5.jpg" class="img-circle" alt="profile pic" width="150" height="150"></p>
+                                                                  </div>
+                                                                  <div class="col-sm-9 col-md-10 main">
+                                                                    <h1>selenagomez</h1>
+                                                                    <div class="row">
+                                                                      <div class="col-xs-12 col-md-8" style="float:left;">
+                                                                        <p><strong>Selena Gómez</strong> Hi. My name is Selena and I'm from Texas. Listen my new single 'Wolves'. Now avaliable!</p>
+                                                                      </div>
+                                                                      <div class="col-xs-6 col-md-4">
+                                                                        <p style="text-align:right;"><a href="https://twitter.com/selenagomez" target="_blank"><img src="https://lh6.googleusercontent.com/--aIk2uBwEKM/T3nN1x09jBI/AAAAAAAAAs8/qzDsbw3kEm8/s32/twitter32.png" width=25 height=25 alt="Síguenos en Twitter" /></a>
+                                                                          <a href="https://www.youtube.com/channel/UCPNxhDvTcytIdvwXWAm43cA" target="_blank"><img alt="Siguenos en YouTube" src="https://lh5.googleusercontent.com/-TXzlKCbKzWs/T6mYkDhTXyI/AAAAAAAAA1U/vm95Q2KwrYg/s32/youtube32.png" width=25 height=25  /></a>
+                                                                          <a href="https://www.instagram.com/selenagomez/?hl=es" target="_blank"><img alt="Siguenos en Blogger" src="https://lh5.googleusercontent.com/-vBqtz2iv2BE/UIqE3LQyFMI/AAAAAAAABgA/TJ4W-vIBjsc/s32/instagram32.png" width=25 height=25  /></a></p>
+
+                                                                        </div>
+                                                                      </div>
+
+                                                                      <nav class="navbar" role="navigation">
+                                                                        <div>
+                                                                          <ul class="nav navbar-nav">
+                                                                            <li class="active"><a href="#" id="clickpubli"><span class="badge">2</span>Publicaciones</a></li>
+                                                                            <li><a href="#" id="clickseg"><span class="badge">4</span>Seguidores</a></li>
+                                                                            <li><a href="#" id="clicksig"><span class="badge">2</span>Siguiendo</a></li>
+                                                                          </ul>
+                                                                          <ul class="nav navbar-nav navbar-right">
+                                                                            <li class="dropdown">
+                                                                              <a class="dropdown-toggle" data-toggle="dropdown" data-target="dp2"><span class="glyphicon glyphicon-cog gi-2x"></span></a>
+                                                                              <ul class="dropdown-menu" id="dp2">
+                                                                                <li><a change="cuenta">Editar Perfil</a></li>
+                                                                                <li><a change="suscripcion">Notificaciones por Correo</a></li>
+                                                                                <li><a change="contraseña">Cambiar Contraseña</a></li>
+                                                                                <li class="divider"></li>
+                                                                                <li><a href="./index.html">Cerrar sesión</a></li>
+                                                                              </ul>
+                                                                            </li>
+                                                                          </ul>
+                                                                        </div>
+                                                                      </nav>
+                                                                    </div>
+                                                                  </div>
+
+                                                                </div>
+                                                              </div>
+
+                                                            </section>
+
+                                                            <section id="mensajes">
+                                                              <h2>Mensajes</h2>
+                                                              <div class="panel-group" style="overflow-y:scroll;">
+                                                                <div class="panel panel-default">
+                                                                  <div class="panel-body">
+                                                                    <div class="row">
+                                                                      <div class="col-sm-2 col-md-2 ">
+                                                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Selena_Gomez_-_Walmart_Soundcheck_Concert.jpg/492px-Selena_Gomez_-_Walmart_Soundcheck_Concert.jpg" class="img-circle" alt="profile pic"  width="50" height="50">
+                                                                      </div>
+                                                                      <div class="col-sm-10 col-md-10">
+                                                                        <a change="Selena">
+                                                                          <h4><b>Selena Gómez</b></h4>
+                                                                          <p>Que tal guapi</p>
+                                                                        </a>
+                                                                      </div>
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                                <div class="panel panel-default">
+                                                                  <div class="panel-body">
+                                                                    <div class="row">
+                                                                      <div class="col-sm-2 col-md-2 ima">
+                                                                        <img src="http://images6.fanpop.com/image/polls/1271000/1271423_1377665739255_full.png?v=1377665877" class="img-circle" alt="profile pic" width="50" height="50">
+                                                                      </div>
+                                                                      <div class="col-sm-10 col-md-10 ima">
+                                                                        <h4><b>Taylor Swift</b></h4>
+                                                                        <p>Escucha mi nuevo disco</p>
+                                                                      </div>
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                                <div class="panel panel-default">
+                                                                  <div class="panel-body">
+                                                                    <div class="row">
+                                                                      <div class="col-sm-2 col-md-2 ima">
+                                                                        <img src="https://www.hola.com/imagenes/actualidad/2017090899092/kiko-rivera-caribe/0-485-320/kiko-t.jpg" class="img-circle" alt="profile pic" width="50" height="50">
+                                                                      </div>
+                                                                      <div class="col-sm-10 col-md-10 ima">
+                                                                        <h4><b>Kiko Rivera</b></h4>
+                                                                        <p>Que tal todo</p>
+                                                                      </div>
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                                <div class="panel panel-default">
+                                                                  <div class="panel-body">
+                                                                    <div class="row">
+                                                                      <div class="col-sm-2 col-md-2 ima">
+                                                                        <img src="http://los40es00.epimg.net/los40/imagenes/2017/01/17/album/1484675309_894438_1484675936_album_normal.jpg" class="img-circle" alt="profile pic" width="50" height="50">
+                                                                      </div>
+                                                                      <div class="col-sm-10 col-md-10 ima">
+                                                                        <h4><b>Demi Lovato</b></h4>
+                                                                        <p>Hi!!!</p>
+                                                                      </div>
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                                <div class="panel panel-default">
+                                                                  <div class="panel-body">
+                                                                    <div class="row">
+                                                                      <div class="col-sm-2 col-md-2 ima">
+                                                                        <img src="https://i.axs.com/2016/07/promoted-media-optimized_5776cc52b3816.jpg" class="img-circle" alt="profile pic" width="50" height="50">
+                                                                      </div>
+                                                                      <div class="col-sm-10 col-md-10 ima">
+                                                                        <h4><b>Justin Bieber</b></h4>
+                                                                        <p>Let's make a collab!!</p>
+                                                                      </div>
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                                <div class="panel panel-default">
+                                                                  <div class="panel-body">
+                                                                    <div class="row">
+                                                                      <div class="col-sm-2 col-md-2 ima">
+                                                                        <img src="http://i.telegraph.co.uk/multimedia/archive/02510/justin2_2510378b.jpg" class="img-circle" alt="profile pic" width="50" height="50">
+                                                                      </div>
+                                                                      <div class="col-sm-10 col-md-10 ima">
+                                                                        <h4><b>Justin Timberlake</b></h4>
+                                                                        <p>Holaaaa!!</p>
+                                                                      </div>
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                                <!--
                                                                 <div id="panelNuev">
-      <div class="panel-heading">
-        <div class="row">
-          <div class="col-xs-3 col-md-3">Mensaje nuevo</div>
-          <div class="col-xs-3 col-md-3 col-md-offset-6">
-            <input type="button" class="btn btn-default btn-block"  id="enviar" value="Mis mensajes"></input>
-          </div>
-        </div>
-      </div>
-      <div class="panel-body">
-        Usuario<input type="text" class="form-control" placeholder="Enviar a" /><br>
-        Mensaje<textarea class="form-control" rows="5" id="comment"></textarea><br>
-        <button type="button" id="enviar" class="btn btn-success">Enviar</button>
-      </div>
-    </div>
-                                                              -->
-                          </div>
-                      </section>
+                                                                <div class="panel-heading">
+                                                                <div class="row">
+                                                                <div class="col-xs-3 col-md-3">Mensaje nuevo</div>
+                                                                <div class="col-xs-3 col-md-3 col-md-offset-6">
+                                                                <input type="button" class="btn btn-default btn-block"  id="enviar" value="Mis mensajes"></input>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                          <div class="panel-body">
+                                                          Usuario<input type="text" class="form-control" placeholder="Enviar a" /><br>
+                                                          Mensaje<textarea class="form-control" rows="5" id="comment"></textarea><br>
+                                                          <button type="button" id="enviar" class="btn btn-success">Enviar</button>
+                                                        </div>
+                                                      </div>
+                                                    -->
+                                                  </div>
+                                                </section>
 
-  <section id="perfil">
-    <div class="row">
-      <div class="col-sm-3 col-md-2 ima">
-        <p style="text-align:center; margin-top:20px;"><img src="https://orig00.deviantart.net/c0c0/f/2013/182/e/8/selena_gomez_icon_by_withswag-d6bgvc5.jpg" class="img-circle" alt="profile pic" width="150" height="150"></p>
-      </div>
-      <div class="col-sm-9 col-md-10 main">
-        <h1>selenagomez</h1>
-        <div class="row">
-		  <div class="col-xs-12 col-md-8" style="float:left;">
-		  	<p><strong>Selena Gómez</strong> Hi. My name is Selena and I'm from Texas. Listen my new single 'Wolves'. Now avaliable!</p>
-		  </div>
-		  <div class="col-xs-6 col-md-4">
-		  	<p style="text-align:right;"><a href="https://twitter.com/selenagomez" target="_blank"><img src="https://lh6.googleusercontent.com/--aIk2uBwEKM/T3nN1x09jBI/AAAAAAAAAs8/qzDsbw3kEm8/s32/twitter32.png" width=25 height=25 alt="Síguenos en Twitter" /></a>
-		  	<a href="https://www.youtube.com/channel/UCPNxhDvTcytIdvwXWAm43cA" target="_blank"><img alt="Siguenos en YouTube" src="https://lh5.googleusercontent.com/-TXzlKCbKzWs/T6mYkDhTXyI/AAAAAAAAA1U/vm95Q2KwrYg/s32/youtube32.png" width=25 height=25  /></a>
-		  	<a href="https://www.instagram.com/selenagomez/?hl=es" target="_blank"><img alt="Siguenos en Blogger" src="https://lh5.googleusercontent.com/-vBqtz2iv2BE/UIqE3LQyFMI/AAAAAAAABgA/TJ4W-vIBjsc/s32/instagram32.png" width=25 height=25  /></a></p>
-
-
-		  </div>
-		</div>
-        
-        <nav class="navbar" role="navigation">
-          <div>
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#" id="clickpubli"><span class="badge">2</span>Publicaciones</a></li>
-              <li><a href="#" id="clickseg"><span class="badge">4</span>Seguidores</a></li>
-              <li><a href="#" id="clicksig"><span class="badge">2</span>Siguiendo</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-              <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" data-target="dp2"><span class="glyphicon glyphicon-cog gi-2x"></span></a>
-                <ul class="dropdown-menu" id="dp2">
-                  <li><a change="cuenta">Editar Perfil</a></li>
-                  <li><a change="suscripcion">Notificaciones por Correo</a></li>
-                  <li><a change="contraseña">Cambiar Contraseña</a></li>
-                  <li class="divider"></li>
-                  <li><a href="./index.html">Cerrar sesión</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-    </div>
-
-    <div id = "public">
-      <div class="row">
-        <div class="col-xs-6">
-          <div class="panel panel-default">
-	        <div class="panel-body">
-	          <div class="embed-responsive embed-responsive-16by9">
-	            <video class="embed-responsive-item" controls>
-	              <source src="static/selenagomezWolves.mp4" type="video/mp4">
-	              </video>
-	            </div>
-	            <div class="row">
-	            	<div class="col-xs-16 col-sm-9">
-	            		<h3>Wolves - Selena Gómez ft Marshmello</h3>
-	            	</div>
-  					<div class="col-xs-6 col-sm-3" style="text-align:right;">
-				              <h5>Selena Gómez <i class="glyphicon glyphicon-user"></i></h5>
-				              <p>18/10/2017 <i class="glyphicon glyphicon-time"></i></p>
-				            
-  					</div>
-	            </div>
-	          </div>
-	        </div>
-
-        </div>
-        <div class="col-xs-6">
-        	<div class="panel panel-default">
-	        <div class="panel-body">
-	          <div class="embed-responsive embed-responsive-16by9">
-	            <video class="embed-responsive-item" controls>
-	              <source src="static/SelenaKygoItAintMe.mp4" type="video/mp4">
-	              </video>
-	            </div>
-	            <div class="row">
-	            	<div class="col-xs-16 col-sm-9">
-	            		<h3>It Ain't Me - Selena Gómez and Kygo</h3>
-	            	</div>
-  					<div class="col-xs-6 col-sm-3" style="text-align:right;">
-				              <h5>Selena Gómez <i class="glyphicon glyphicon-user"></i></h5>
-				              <p>12/10/2016 <i class="glyphicon glyphicon-time"></i></p>
-				            
-  					</div>
-	            </div>
-	          </div>
-	        </div>
-        </div>
-      </div>
-    </div>
-
-    <div id = "seg">
-    	<div class="row">
-		  <div class="col-xs-4 col-md-3">
-		  	<div class="panel panel-default">
-			  <div class="panel-body" style="text-align:center;">
-			  	<a href="#"><img src="https://scontent-mad1-1.cdninstagram.com/t51.2885-19/s150x150/16906849_105390733475092_7640936403735412736_a.jpg" class="img-circle" width= "80px" height= "80px"></a>
-			  	<p><b>Pablo</b></p>
-            	<p>@pabloalvarez</p>
-			  </div>
-			</div>
-		  </div>
-		  <div class="col-xs-4 col-md-3">
-		  	<div class="panel panel-default">
-			  <div class="panel-body" style="text-align:center;">
-			  	<a href="#"><img src="https://pbs.twimg.com/profile_images/757924077629743105/D-8v_kZh.jpg" class="img-circle" width= "80px" height= "80px"></a>
-			  	<p><b>Pablo</b></p>
-            	<p>@pabloalonso</p>
-			  </div>
-			</div>
-		  </div>
-		  <div class="col-xs-4 col-md-3">
-		  <div class="panel panel-default">
-			  <div class="panel-body" style="text-align:center;">
-			  	<a href="#"><img src="https://morellobookings.com/wp-content/uploads/2017/08/John-Wood-Jan-14-JOHN-WOOD-HEAD-Jan14_2014_1001.jpg" class="img-circle" width= "80px" height= "80px"></a>
-			  	<p><b>John</b></p>
-           	 	<p>@john</p>
-			  </div>
-			</div>
-		</div>
-		  <div class="col-xs-4 col-md-3">
-		  	<div class="panel panel-default">
-			  <div class="panel-body" style="text-align:center;">
-			  	<a href="#"><img src="https://www.wilsoncenter.org/sites/default/files/andrea_tanco_0.jpg" class="img-circle" width= "80px" height= "80px"></a>
-			  	<p><b>María</b></p>
-            <p>@mariaaa</p>
-			  </div>
-			</div>
-		  </div>
-		</div>
-</div>
-    <div id = "sig">
-    	<div class="row">
-		  <div class="col-xs-4 col-md-3">
-		  	<div class="panel panel-default">
-			  <div class="panel-body" style="text-align:center;">
-			  	<a href="#"><img src="https://i.axs.com/2016/07/promoted-media-optimized_5776cc52b3816.jpg" class="img-circle" width= "80px" height= "80px"></a>
-			  	<p><b>Justin Bieber</b></p>
-            	<p>@justinBieber</p>
-			  </div>
-			</div>
-		  </div>
-		  <div class="col-xs-4 col-md-3">
-		  	<div class="panel panel-default">
-			  <div class="panel-body" style="text-align:center;">
-			  	<a href="#"><img src="https://i.pinimg.com/originals/39/aa/6a/39aa6a4492740e5b2427a9eb7f9c1134.jpg" class="img-circle" width= "80px" height= "80px"></a>
-			  	<p><b>Demi Lovato</b></p>
-            	<p>@demiLovato</p>
-			  </div>
-			</div>
-		  </div>
-		 </div>
-    </div>
-</section>
- <section id="cuenta">
-      <h2>Editar Perfil</h2>
-    <hr>
-<div class="panel-group">
-      <!-- left column -->
-      <div class="col-md-3">
-        <div class="text-center">
-          <img src="./photo/user.png" class="user logo_user" alt="avatar">
-          <h6>Sube una foto diferente...</h6>
-          
-          <input class="form-control" type="file" style="padding-bottom: 40px">
-          <div class="form-group" style="margin-top: 30px;">
-        <label for="comment">Biografía</label>
-        <textarea class="form-control" rows="5" id="comment" placeholder="Cuéntanos algo de ti :)"></textarea>
-      </div> 
-        </div>
-      </div>
-      
-      <!-- edit form column -->
-      <div class="col-md-9 personal-info">
-        
-        <h3>Información Personal</h3>
-        
-        <form class="form-horizontal" role="form">
-          <div class="form-group">
-            <label class="col-lg-3 control-label">Nombre:</label>
-            <div class="col-lg-8">
-              <input class="form-control" type="text">
-            </div>
-          </div>
-          <div class="form-group">
-            <label class="col-lg-3 control-label">Apellido:</label>
-            <div class="col-lg-8">
-              <input class="form-control" type="text">
-            </div>
-          </div>
-          <div class="form-group">
-            <label class="col-lg-3 control-label">Empresa:</label>
-            <div class="col-lg-8">
-              <input class="form-control" value="" type="text">
-            </div>
-          </div>
-          <div class="form-group">
-            <label class="col-lg-3 control-label">Idioma:</label>
-            <div class="col-lg-8">
-              <select class="form-control">
-                <option>Español</option>
-                <option>Inglés</option>
-                <option>Chino</option>
-                <option>Ruso</option>
-              </select>
-            </div>
-          </div>
-          <div class="form-group">
-            <label class="col-lg-3 control-label">Correo electrónico:</label>
-            <div class="col-lg-8">
-              <input class="form-control" type="text">
-            </div>
-          </div>
-          <div class="form-group">
-            <label class="col-lg-3 control-label">Número de teléfono:</label>
-            <div class="col-lg-8">
-              <input class="form-control" type="text">
-            </div>
-          </div>
-          <div class="form-group">
-            <label class="col-md-3 control-label">Nombre de usuario:</label>
-            <div class="col-md-8">
-              <input class="form-control" type="text">
-            </div>
-          </div>
-        </form>
-
-        <hr>
-
-        <h3>Seguridad</h3>
-        <form class="form-horizontal" role="form">
-          <div class="form-group">
-            <div class="checkbox">
-              <label><input type="checkbox" value="">Verificación de restablecimiento de contraseña</label>
-               <span class="help-block">Después de iniciar sesión, se te enviará un mensaje de texto SMS con un código que necesitarás para acceder a tu cuenta.</span>
-            </div>
-          </div>
-          <div class="form-group">
-            <div class="checkbox">
-              <label><input type="checkbox" value="">Verificación de inicio de sesión</label>
-               <span class="help-block">Para mayor seguridad, confirma tu correo electrónico o tu número de teléfono para restablecer tu contraseña.</span>
-            </div>
-          </div>
-        </form>
-      </div>
-  </div>
-<hr>
-
-<div class="panel-group">
-  <header>
-    <h1>Tus <strong>géneros</strong> favoritos</h1>  
-  </header>
-      
-      <div class="row">
-  
-    <ul class="ch-grid">
-      <li>
-        <div class="ch-item" style="background-image: url(https://images.sk-static.com/images/media/img/col3/20120614-212805-236460.jpg)">
-          <div class="ch-info">
-            <h3 style="color: black; font-weight: bold;">POP</h3>
-            <p><a href="http://drbl.in/eODP" style="color: black">Cambiar </a><a href="http://drbl.in/eODP" style="color: black">Borrar</a></p>
-          </div>
-        </div>
-      </li>
-
-      <li>
-        <div class="ch-item" style="background-image: url(https://wwcdn.weddingwire.com/vendor/355001_360000/355093/thumbnails/220x220_SQ_1421445103901-123rf---rock-music-sign---11657284m.jpg)">
-          <div class="ch-info">
-            <h3 style="color: black; font-weight: bold;">ROCK</h3>
-            <p><a href="http://drbl.in/eODP" style="color: black">Cambiar </a><a href="http://drbl.in/eODP" style="color: black">Borrar</a></p>
-          </div>
-        </div>
-      </li>
-
-      <li>
-        <div class="ch-item" style="background-image: url(https://listasspotify.es/sites/listasspotify.es/files/imagecache/portada_v2/50751-i-love-indie-1920x1080-music-wallpaper-418x313.jpeg)">
-          <div class="ch-info">
-            <h3 style="color: black; font-weight: bold;">INDIE</h3>
-            <p><a href="http://drbl.in/eODP" style="color: black;">Cambiar </a><a href="http://drbl.in/eODP" style="color: black">Borrar</a></p>
-          </div>
-        </div>
-      </li>
-
-      <li>
-        <div class="ch-item" style="background-image: url(https://firewallcafe.com/wp-content/uploads/2017/05/20/157739/google-1495294214-02-220x220.jpg)">
-          <div class="ch-info">
-            <h3 style="font-weight: bold;">TECHNO</h3>
-            <p><a href="http://drbl.in/eODP">Cambiar </a><a href="http://drbl.in/eODP">Borrar</a></p>
-          </div>
-        </div>
-      </li>
-
-      <li>
-        <div class="ch-item" style="background-image: url(https://t2.genius.com/unsafe/220x0/https%3A%2F%2Fimages.genius.com%2Fb256d7389b0fcefb08be6448ea090127.462x462x1.jpg)">
-          <div class="ch-info">
-            <h3 style="color: white; font-weight: bold;">RAP</h3>
-            <p><a href="http://drbl.in/eODP" style="color: white">Cambiar </a><a href="http://drbl.in/eODP" style="color: white">Borrar</a></p>
-          </div>
-        </div>
-      </li>
-
-      <li>
-        <div class="ch-item" style="background-image: url(https://iconalone.com/sites/default/files/styles/220x220/public/Add%20button.svg_0.png?itok=bF-qHAmZ)">
-          <div class="ch-info">
-            <h3 style="color: black; font-weight: bold;">Nuevo</h3>
-            <p><a href="http://drbl.in/eODP" style="color: black">Añadir</a></p>
-          </div>
-        </div>
-      </li>
-    </ul>
-
-    <hr>
-    
-    <button type="button" class="btn btn-success">Guardar cambios</button>
-
-  </div>
-
-</div>
-<button class="btn btn-primary fixedbutton" type="button" change="perfil">
-<span class="glyphicon glyphicon-menu-left x2"></span>
-</button>
-</section>
-<section id="suscripcion">
-  <h2>Suscripción</h2>
- <div class="panel-group"> 
- <div class="panelNuev">
-      <div class="panel-heading">Actividad relacionada contigo y tus publicaciones</div>
-      <div class="panel-body">
-
-  <p>Enviarme un correo electrónico cuando:</p>
-  <form>
-    <div class="checkbox">
-      <label><input type="checkbox" value="">Tienes notificaciones nuevas</label>
-    </div>
-    <div class="checkbox">
-      <label><input type="checkbox" value="">Te envían un Mensaje Directo</label>
-    </div>
-  </form>
-</div>
-
-</div><hr>
-
- <div class="panelNuev">
-    <div class="panel-heading">Actividad de tu red</div>
-    <div class="panel-body">
-    <p>Recibirás correos electrónicos con:</p>
-      <form>
-        <div class="checkbox">
-          <label><input type="checkbox" value="">Publicaciones relevantes</label>
-        </div>
-        <select class="form-control" id="sel1">
-        <option>Diariamente</option>
-        <option>Semanalmente</option>
-        <option>Periódicamente</option>
-        </select>
-        <div class="checkbox">
-          <label><input type="checkbox" value="">Actualizaciones sobre la repercusión de tus publicaciones</label>
-        </div>
-      </form>
-    </div>
-
-  </div><hr>
-
- <div class="panelNuev">
-    <div class="panel-heading">Actualizaciones de la aplicación</div>
-    <div class="panel-body">
-    <p>Recibirás correos electrónicos con:</p>
-    <form>
-        <div class="checkbox">
-          <label><input type="checkbox" value="">Noticias sobre productos y actualizaciones de características de la aplicación</label>
-        </div>
-        <div class="checkbox">
-          <label><input type="checkbox" value="">Consejos para sacar el máximo partido de la aplicación</label>
-        </div>
-        <div class="checkbox">
-          <label><input type="checkbox" value="">Cosas que te perdiste desde tu última sesión</label>
-        </div>
-        <div class="checkbox">
-          <label><input type="checkbox" value="">Sugerencias de cuentas recomendadas</label>
-        </div>
-        <div class="checkbox">
-          <label><input type="checkbox" value="">Sugerencias basadas en tus seguimientos recientes</label>
-        </div>
-      </form>
-  </div><hr>
-  <button type="button" class="btn btn-success">Guardar cambios</button>
-  </div>
-  </div>
-</section>
-<section id="contraseña">
-  <h2>Cambiar contraseña</h2>
-   <div class="panel-group">
-<div class="panelNuev">
-      <div class="panel-body">
-    <div class="form-group">
-      <label for="pwd">Contraseña actual:</label>
-      <input type="password" class="form-control" id="pwd">
-    </div>
-
-    <div class="form-group">
-      <label for="pwd">Nueva contraseña:</label>
-      <input type="password" class="form-control" id="pwd">
-    </div>
-
-   <div class="form-group">
-      <label for="pwd">Confirma nueva contraseña:</label>
-      <input type="password" class="form-control" id="pwd">
-    </div>
+                                                <section id="perfil">
+                                                  <div class="row">
+                                                    <div class="col-sm-3 col-md-2 ima">
+                                                      <p style="text-align:center; margin-top:20px;"><img src="https://orig00.deviantart.net/c0c0/f/2013/182/e/8/selena_gomez_icon_by_withswag-d6bgvc5.jpg" class="img-circle" alt="profile pic" width="150" height="150"></p>
+                                                    </div>
+                                                    <div class="col-sm-9 col-md-10 main">
+                                                      <h1>selenagomez</h1>
+                                                      <div class="row">
+                                                        <div class="col-xs-12 col-md-8" style="float:left;">
+                                                          <p><strong>Selena Gómez</strong> Hi. My name is Selena and I'm from Texas. Listen my new single 'Wolves'. Now avaliable!</p>
+                                                        </div>
+                                                        <div class="col-xs-6 col-md-4">
+                                                          <p style="text-align:right;"><a href="https://twitter.com/selenagomez" target="_blank"><img src="https://lh6.googleusercontent.com/--aIk2uBwEKM/T3nN1x09jBI/AAAAAAAAAs8/qzDsbw3kEm8/s32/twitter32.png" width=25 height=25 alt="Síguenos en Twitter" /></a>
+                                                            <a href="https://www.youtube.com/channel/UCPNxhDvTcytIdvwXWAm43cA" target="_blank"><img alt="Siguenos en YouTube" src="https://lh5.googleusercontent.com/-TXzlKCbKzWs/T6mYkDhTXyI/AAAAAAAAA1U/vm95Q2KwrYg/s32/youtube32.png" width=25 height=25  /></a>
+                                                            <a href="https://www.instagram.com/selenagomez/?hl=es" target="_blank"><img alt="Siguenos en Blogger" src="https://lh5.googleusercontent.com/-vBqtz2iv2BE/UIqE3LQyFMI/AAAAAAAABgA/TJ4W-vIBjsc/s32/instagram32.png" width=25 height=25  /></a></p>
 
 
-  </div><hr>
+                                                          </div>
+                                                        </div>
 
-  <button type="button" class="btn btn-success">Guardar cambios</button>
-    
-  </div>
-</div>
-<button class="btn btn-primary fixedbutton" type="button" change="perfil">
-<span class="glyphicon glyphicon-menu-left x2"></span>
-</button>
-      </section>
-      
-     <section id="editor">
-        <div id="contenedorPrincipal">
-          <div id="barraEdicion">
-              <ul id="menu1">
-                
-                    <li>
-                      <a href="#" >  
-                            <img src="img/deshacer.png" title="Deshacer"/> <br>
-                            <p> Deshacer  </p> 
-                        </a> 
-                    </li>
-                    
-                    <li>
-                      <a href="#" > 
-                            <img src="img/rehacer.png" title="Rehacer"/> <br>
-                            <p> Rehacer  </p> 
-                        </a> 
-                    </li>
-                    
-                    <li class="separacion">
-                      <a href="#" > 
-                            <img src="img/revertir.png" title="Revertir cambios"/> <br>
-                            <p> Revertir</p> 
-                        </a> 
-                    </li>
-                   
-                    <li>
-                      <a href="#" > 
-                            <img src="img/brillo.png" title="Brillo"/> <br>
-                            <p> Brillo  </p>  
-                        </a> 
-                    </li>
-                    
-                    <li>
-                      <a href="#" >  
-                            <img src="img/contraste.png" title="Contraste"/> <br>
-                            <p> Contraste  </p> 
-                        </a> 
-                    </li>
-                    
-                    <li>
-                      <a href="#" > 
-                            <img src="img/rotar.png" title="Rotar"/> <br>
-                            <p> Rotar  </p>  
-                        </a> 
-                    </li>
-                    
-                    <li>
-                      <a href="#" > 
-                            <img src="img/recortar.png" title="Recortar"/> <br>
-                            <p> Recortar  </p> 
-                        </a> 
-                    </li>
-                    
-                    <li>
-                      <a href="#" > 
-                            <img src="img/efectos.png" title="Efectos"/> <br>
-                            <p> Efectos  </p> 
-                        </a> 
-                    </li>
-                    
-                    <li>
-                      <a href="#" > 
-                            <img src="img/emoticonos.png" title="Emoticonos"/> <br>
-                            <p> Emoticonos  </p> 
-                        </a> 
-                    </li>
-                    
-          <li>
-                      <a href="#"> 
-                            <img src="img/ruido.png" title="Ruido"/> <br>
-                            <p> Ruido  </p>  
-                        </a> 
-                    </li>
-                    
-                    <li>
-                      <a href="#" >  
-                            <img src="img/texto.png" title="Texto"/> <br>
-                            <p> Texto  </p> 
-                        </a> 
-                    </li>
-                    
-                    <li class="separacion">
-                      <a href="#" > 
-                            <img src="img/grabar.png" title="Grabar"/> <br>
-                            <p> Grabar  </p> 
-                        </a> 
-                    </li>
-                    
-        </ul>
-              
-            </div>
-            
-            <div id="publicar">
-                <a href="#" class="botonEditor">Exportar</a>
-                <a href="#" class="botonEditor">Publicar</a>
-		<input type="text" placeholder="Escribe un titulo" id="tituloSubida">
-            </div>
-            
-            <div id="video">
-              <img src="img/subir.png"/>
-                <h2> Arrastra & Suelta tu musica aqui</h2>
-                <p> _____________ O selecciona un archivo _____________</p>
-                <label for="image">
-                  <input type="file" name="image" id="image" style="display:none;"/>
-                    Buscar musica
-                 </label>
-            </div>
-            
-            <div id="misSubidas">
-              <h2> <img src="img/notaMusical.png"/> Mis subidas <img src="img/notaMusical.png"/> </h2>
-                <video src="static/musica2.webm" class="contenidoInterno" controls autoplay muted loop draggable="true" ></video>
-              <video src="static/musica1.webm" class="contenidoInterno" controls autoplay muted loop draggable="true" ></video>
-                <video src="static/musica2.webm" class="contenidoInterno" controls autoplay muted loop draggable="true" ></video>
-                <br>
-                <label for="image">
-              <input type="file" name="image" id="image" style="display:none;"/>
-              <img src="img/anade.png"/>
-                    <p> Sube tus nuevas creaciones </p>
-          </label>
-            </div>
-            
-            <div id="lineaTiempo">
-              <table border="1">
-                    <tr>
-                      <td></td>
-                        <th><pre>00:00:00       00:00:05       00:00:10       00:00:15       00:00:20       00:00:25       00:00:30       00:00:35       00:00:40       00:00:45       00:00:50          </pre> 
-                          <pre>|___|___|___|___|___|___|___|___|___|___|___|___|___|___<b>|</b>___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|</pre>
-                      </th>
-                    </tr>
-                     
-                    <tr>
-                      <td><img src="img/video.png" width="30px" height="30px"/></td>
-                      <td><img src="img/cinta video.png" class="videoLineaTiempo"/></td>
-                    </tr>
-                     
-                    <tr>
-                      <td><img src="img/imagen.png" width="30px" height="30px"/></td>
-                      <td>
-                        <img src="img/imag1.png" class="imagenLineaTiempo"/>
-                        <img src="img/imag2.png" class="imagenLineaTiempo"/>
-                        <img src="img/imag3.png" class="imagenLineaTiempo"/>
-                        <img src="img/imag4.png" class="imagenLineaTiempo"/>
-                        <img src="img/imag5.png" class="imagenLineaTiempo"/>
-                        <img src="img/imag6.png" class="imagenLineaTiempo"/>
-                        <img src="img/imag7.png" class="imagenLineaTiempo"/>
-                      
-                      </td>
-                    </tr>
-                     
-                    <tr>
-                      <td><img src="img/texto2.png" width="30px" height="25px"/></td>
-                      <td></td>
-                    </tr>
-                    
-                    <tr>
-                      <td><img src="img/musica.png" width="30px" height="30px"/></td>
-                      <td>
-            <img src="img/cinta musica 1.png" class="musicaLineaTiempo"/>
-            <img src="img/cinta musica 2.png" class="musicaLineaTiempo"/>
-                      </td>
-                    </tr>
-                </table>
-            </div>
-            
-        </div>
-      </section>
-      <section id="Selena">
-        
- <div class="panel-group"> 
-    <div class="panelGen" border>
-      <div class="panel-heading">
-          <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Selena_Gomez_-_Walmart_Soundcheck_Concert.jpg/492px-Selena_Gomez_-_Walmart_Soundcheck_Concert.jpg" class="img-circle" alt="profile pic" width="50" height="50">
-          Selena Gomez</h1>
-    </div>
-    <div class="panel-body">
-      <div class="row">
-        <div class="col-sm-1 col-md-1 col-md-offset-1 ima ">
-          10:15 20/6/2017
-        </div>
-        <div class="col-sm-6 col-md-6 ima yo">
-          Que tal guapi
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-6 col-md-6 col-md-offset-4 ima selena">
-          Todo bien, tú?
-        </div>
-        <div class="col-sm-1 col-md-1 ima ">
-          10:21 20/6/2017
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-1 col-md-1 col-md-offset-1 ima ">
-          10:53 20/6/2017
-        </div>
-        <div class="col-sm-6 col-md-6 ima yo">
-          A ver si saco nuevo disco
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-6 col-md-6 col-md-offset-4 ima selena">
-          A ver si es verdad
-        </div>
-        <div class="col-sm-1 col-md-1 ima ">
-          12:17 20/6/2017
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-1 col-md-1 col-md-offset-1 ima ">
-          13:14 20/6/2017
-        </div>
-        <div class="col-sm-6 col-md-6 ima yo">
-          Espera sentao
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-6 col-md-6 col-md-offset-2 ima">
-          <input type="text" class="form-control mensaje" placeholder="Escribe aquí tu mensaje."></input>
-        </div>
-        <div class="col-sm-2 col-md-2 ima">
-          <input class="btn btn-default btn-block" value="Enviar"></input>
-        </div>
-      </div>
-    </div>
-  </div>
-  <button class="btn btn-primary fixedbutton" type="button" change="mensajes">
-<span class="glyphicon glyphicon-menu-left x2"></span>
-</button>
-      </section>
-    </main>
-  </div>
-</body>
-</html>
+                                                        <nav class="navbar" role="navigation">
+                                                          <div>
+                                                            <ul class="nav navbar-nav">
+                                                              <li class="active"><a href="#" id="clickpubli"><span class="badge">2</span>Publicaciones</a></li>
+                                                              <li><a href="#" id="clickseg"><span class="badge">4</span>Seguidores</a></li>
+                                                              <li><a href="#" id="clicksig"><span class="badge">2</span>Siguiendo</a></li>
+                                                            </ul>
+                                                            <ul class="nav navbar-nav navbar-right">
+                                                              <li class="dropdown">
+                                                                <a class="dropdown-toggle" data-toggle="dropdown" data-target="dp2"><span class="glyphicon glyphicon-cog gi-2x"></span></a>
+                                                                <ul class="dropdown-menu" id="dp2">
+                                                                  <li><a change="cuenta">Editar Perfil</a></li>
+                                                                  <li><a change="suscripcion">Notificaciones por Correo</a></li>
+                                                                  <li><a change="contraseña">Cambiar Contraseña</a></li>
+                                                                  <li class="divider"></li>
+                                                                  <li><a href="./index.html">Cerrar sesión</a></li>
+                                                                </ul>
+                                                              </li>
+                                                            </ul>
+                                                          </div>
+                                                        </nav>
+                                                      </div>
+                                                    </div>
+
+                                                    <div id = "public">
+                                                      <div class="row">
+                                                        <div class="col-xs-6">
+                                                          <div class="panel panel-default">
+                                                            <div class="panel-body">
+                                                              <div class="embed-responsive embed-responsive-16by9">
+                                                                <video class="embed-responsive-item" controls>
+                                                                  <source src="static/selenagomezWolves.mp4" type="video/mp4">
+                                                                  </video>
+                                                                </div>
+                                                                <div class="row">
+                                                                  <div class="col-xs-16 col-sm-9">
+                                                                    <h3>Wolves - Selena Gómez ft Marshmello</h3>
+                                                                  </div>
+                                                                  <div class="col-xs-6 col-sm-3" style="text-align:right;">
+                                                                    <h5>Selena Gómez <i class="glyphicon glyphicon-user"></i></h5>
+                                                                    <p>18/10/2017 <i class="glyphicon glyphicon-time"></i></p>
+
+                                                                  </div>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+
+                                                          </div>
+                                                          <div class="col-xs-6">
+                                                            <div class="panel panel-default">
+                                                              <div class="panel-body">
+                                                                <div class="embed-responsive embed-responsive-16by9">
+                                                                  <video class="embed-responsive-item" controls>
+                                                                    <source src="static/SelenaKygoItAintMe.mp4" type="video/mp4">
+                                                                    </video>
+                                                                  </div>
+                                                                  <div class="row">
+                                                                    <div class="col-xs-16 col-sm-9">
+                                                                      <h3>It Ain't Me - Selena Gómez and Kygo</h3>
+                                                                    </div>
+                                                                    <div class="col-xs-6 col-sm-3" style="text-align:right;">
+                                                                      <h5>Selena Gómez <i class="glyphicon glyphicon-user"></i></h5>
+                                                                      <p>12/10/2016 <i class="glyphicon glyphicon-time"></i></p>
+
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+
+                                                        <div id = "seg">
+                                                          <div class="row">
+                                                            <div class="col-xs-4 col-md-3">
+                                                              <div class="panel panel-default">
+                                                                <div class="panel-body" style="text-align:center;">
+                                                                  <a href="#"><img src="https://scontent-mad1-1.cdninstagram.com/t51.2885-19/s150x150/16906849_105390733475092_7640936403735412736_a.jpg" class="img-circle" width= "80px" height= "80px"></a>
+                                                                  <p><b>Pablo</b></p>
+                                                                  <p>@pabloalvarez</p>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                            <div class="col-xs-4 col-md-3">
+                                                              <div class="panel panel-default">
+                                                                <div class="panel-body" style="text-align:center;">
+                                                                  <a href="#"><img src="https://pbs.twimg.com/profile_images/757924077629743105/D-8v_kZh.jpg" class="img-circle" width= "80px" height= "80px"></a>
+                                                                  <p><b>Pablo</b></p>
+                                                                  <p>@pabloalonso</p>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                            <div class="col-xs-4 col-md-3">
+                                                              <div class="panel panel-default">
+                                                                <div class="panel-body" style="text-align:center;">
+                                                                  <a href="#"><img src="https://morellobookings.com/wp-content/uploads/2017/08/John-Wood-Jan-14-JOHN-WOOD-HEAD-Jan14_2014_1001.jpg" class="img-circle" width= "80px" height= "80px"></a>
+                                                                  <p><b>John</b></p>
+                                                                  <p>@john</p>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                            <div class="col-xs-4 col-md-3">
+                                                              <div class="panel panel-default">
+                                                                <div class="panel-body" style="text-align:center;">
+                                                                  <a href="#"><img src="https://www.wilsoncenter.org/sites/default/files/andrea_tanco_0.jpg" class="img-circle" width= "80px" height= "80px"></a>
+                                                                  <p><b>María</b></p>
+                                                                  <p>@mariaaa</p>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                        <div id = "sig">
+                                                          <div class="row">
+                                                            <div class="col-xs-4 col-md-3">
+                                                              <div class="panel panel-default">
+                                                                <div class="panel-body" style="text-align:center;">
+                                                                  <a href="#"><img src="https://i.axs.com/2016/07/promoted-media-optimized_5776cc52b3816.jpg" class="img-circle" width= "80px" height= "80px"></a>
+                                                                  <p><b>Justin Bieber</b></p>
+                                                                  <p>@justinBieber</p>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                            <div class="col-xs-4 col-md-3">
+                                                              <div class="panel panel-default">
+                                                                <div class="panel-body" style="text-align:center;">
+                                                                  <a href="#"><img src="https://i.pinimg.com/originals/39/aa/6a/39aa6a4492740e5b2427a9eb7f9c1134.jpg" class="img-circle" width= "80px" height= "80px"></a>
+                                                                  <p><b>Demi Lovato</b></p>
+                                                                  <p>@demiLovato</p>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                      </section>
+                                                      <section id="cuenta">
+                                                        <h2>Editar Perfil</h2>
+                                                        <hr>
+                                                        <div class="panel-group">
+                                                          <!-- left column -->
+                                                          <div class="col-md-3">
+                                                            <div class="text-center">
+                                                              <img src="./photo/user.png" class="user logo_user" alt="avatar">
+                                                              <h6>Sube una foto diferente...</h6>
+
+                                                              <input class="form-control" type="file" style="padding-bottom: 40px">
+                                                              <div class="form-group" style="margin-top: 30px;">
+                                                                <label for="comment">Biografía</label>
+                                                                <textarea class="form-control" rows="5" id="comment" placeholder="Cuéntanos algo de ti :)"></textarea>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+
+                                                          <!-- edit form column -->
+                                                          <div class="col-md-9 personal-info">
+
+                                                            <h3>Información Personal</h3>
+
+                                                            <form class="form-horizontal" role="form">
+                                                              <div class="form-group">
+                                                                <label class="col-lg-3 control-label">Nombre:</label>
+                                                                <div class="col-lg-8">
+                                                                  <input class="form-control" type="text">
+                                                                </div>
+                                                              </div>
+                                                              <div class="form-group">
+                                                                <label class="col-lg-3 control-label">Apellido:</label>
+                                                                <div class="col-lg-8">
+                                                                  <input class="form-control" type="text">
+                                                                </div>
+                                                              </div>
+                                                              <div class="form-group">
+                                                                <label class="col-lg-3 control-label">Empresa:</label>
+                                                                <div class="col-lg-8">
+                                                                  <input class="form-control" value="" type="text">
+                                                                </div>
+                                                              </div>
+                                                              <div class="form-group">
+                                                                <label class="col-lg-3 control-label">Idioma:</label>
+                                                                <div class="col-lg-8">
+                                                                  <select class="form-control">
+                                                                    <option>Español</option>
+                                                                    <option>Inglés</option>
+                                                                    <option>Chino</option>
+                                                                    <option>Ruso</option>
+                                                                  </select>
+                                                                </div>
+                                                              </div>
+                                                              <div class="form-group">
+                                                                <label class="col-lg-3 control-label">Correo electrónico:</label>
+                                                                <div class="col-lg-8">
+                                                                  <input class="form-control" type="text">
+                                                                </div>
+                                                              </div>
+                                                              <div class="form-group">
+                                                                <label class="col-lg-3 control-label">Número de teléfono:</label>
+                                                                <div class="col-lg-8">
+                                                                  <input class="form-control" type="text">
+                                                                </div>
+                                                              </div>
+                                                              <div class="form-group">
+                                                                <label class="col-md-3 control-label">Nombre de usuario:</label>
+                                                                <div class="col-md-8">
+                                                                  <input class="form-control" type="text">
+                                                                </div>
+                                                              </div>
+                                                            </form>
+
+                                                            <hr>
+
+                                                            <h3>Seguridad</h3>
+                                                            <form class="form-horizontal" role="form">
+                                                              <div class="form-group">
+                                                                <div class="checkbox">
+                                                                  <label><input type="checkbox" value="">Verificación de restablecimiento de contraseña</label>
+                                                                  <span class="help-block">Después de iniciar sesión, se te enviará un mensaje de texto SMS con un código que necesitarás para acceder a tu cuenta.</span>
+                                                                </div>
+                                                              </div>
+                                                              <div class="form-group">
+                                                                <div class="checkbox">
+                                                                  <label><input type="checkbox" value="">Verificación de inicio de sesión</label>
+                                                                  <span class="help-block">Para mayor seguridad, confirma tu correo electrónico o tu número de teléfono para restablecer tu contraseña.</span>
+                                                                </div>
+                                                              </div>
+                                                            </form>
+                                                          </div>
+                                                        </div>
+                                                        <hr>
+
+                                                        <div class="panel-group">
+                                                          <header>
+                                                            <h1>Tus <strong>géneros</strong> favoritos</h1>
+                                                          </header>
+
+                                                          <div class="row">
+
+                                                            <ul class="ch-grid">
+                                                              <li>
+                                                                <div class="ch-item" style="background-image: url(https://images.sk-static.com/images/media/img/col3/20120614-212805-236460.jpg)">
+                                                                  <div class="ch-info">
+                                                                    <h3 style="color: black; font-weight: bold;">POP</h3>
+                                                                    <p><a href="http://drbl.in/eODP" style="color: black">Cambiar </a><a href="http://drbl.in/eODP" style="color: black">Borrar</a></p>
+                                                                  </div>
+                                                                </div>
+                                                              </li>
+
+                                                              <li>
+                                                                <div class="ch-item" style="background-image: url(https://wwcdn.weddingwire.com/vendor/355001_360000/355093/thumbnails/220x220_SQ_1421445103901-123rf---rock-music-sign---11657284m.jpg)">
+                                                                  <div class="ch-info">
+                                                                    <h3 style="color: black; font-weight: bold;">ROCK</h3>
+                                                                    <p><a href="http://drbl.in/eODP" style="color: black">Cambiar </a><a href="http://drbl.in/eODP" style="color: black">Borrar</a></p>
+                                                                  </div>
+                                                                </div>
+                                                              </li>
+
+                                                              <li>
+                                                                <div class="ch-item" style="background-image: url(https://listasspotify.es/sites/listasspotify.es/files/imagecache/portada_v2/50751-i-love-indie-1920x1080-music-wallpaper-418x313.jpeg)">
+                                                                  <div class="ch-info">
+                                                                    <h3 style="color: black; font-weight: bold;">INDIE</h3>
+                                                                    <p><a href="http://drbl.in/eODP" style="color: black;">Cambiar </a><a href="http://drbl.in/eODP" style="color: black">Borrar</a></p>
+                                                                  </div>
+                                                                </div>
+                                                              </li>
+
+                                                              <li>
+                                                                <div class="ch-item" style="background-image: url(https://firewallcafe.com/wp-content/uploads/2017/05/20/157739/google-1495294214-02-220x220.jpg)">
+                                                                  <div class="ch-info">
+                                                                    <h3 style="font-weight: bold;">TECHNO</h3>
+                                                                    <p><a href="http://drbl.in/eODP">Cambiar </a><a href="http://drbl.in/eODP">Borrar</a></p>
+                                                                  </div>
+                                                                </div>
+                                                              </li>
+
+                                                              <li>
+                                                                <div class="ch-item" style="background-image: url(https://t2.genius.com/unsafe/220x0/https%3A%2F%2Fimages.genius.com%2Fb256d7389b0fcefb08be6448ea090127.462x462x1.jpg)">
+                                                                  <div class="ch-info">
+                                                                    <h3 style="color: white; font-weight: bold;">RAP</h3>
+                                                                    <p><a href="http://drbl.in/eODP" style="color: white">Cambiar </a><a href="http://drbl.in/eODP" style="color: white">Borrar</a></p>
+                                                                  </div>
+                                                                </div>
+                                                              </li>
+
+                                                              <li>
+                                                                <div class="ch-item" style="background-image: url(https://iconalone.com/sites/default/files/styles/220x220/public/Add%20button.svg_0.png?itok=bF-qHAmZ)">
+                                                                  <div class="ch-info">
+                                                                    <h3 style="color: black; font-weight: bold;">Nuevo</h3>
+                                                                    <p><a href="http://drbl.in/eODP" style="color: black">Añadir</a></p>
+                                                                  </div>
+                                                                </div>
+                                                              </li>
+                                                            </ul>
+
+                                                            <hr>
+
+                                                            <button type="button" class="btn btn-success">Guardar cambios</button>
+
+                                                          </div>
+
+                                                        </div>
+                                                        <button class="btn btn-primary fixedbutton" type="button" change="perfil">
+                                                          <span class="glyphicon glyphicon-menu-left x2"></span>
+                                                        </button>
+                                                      </section>
+                                                      <section id="suscripcion">
+                                                        <h2>Suscripción</h2>
+                                                        <div class="panel-group">
+                                                          <div class="panelNuev">
+                                                            <div class="panel-heading">Actividad relacionada contigo y tus publicaciones</div>
+                                                            <div class="panel-body">
+
+                                                              <p>Enviarme un correo electrónico cuando:</p>
+                                                              <form>
+                                                                <div class="checkbox">
+                                                                  <label><input type="checkbox" value="">Tienes notificaciones nuevas</label>
+                                                                </div>
+                                                                <div class="checkbox">
+                                                                  <label><input type="checkbox" value="">Te envían un Mensaje Directo</label>
+                                                                </div>
+                                                              </form>
+                                                            </div>
+
+                                                          </div><hr>
+
+                                                          <div class="panelNuev">
+                                                            <div class="panel-heading">Actividad de tu red</div>
+                                                            <div class="panel-body">
+                                                              <p>Recibirás correos electrónicos con:</p>
+                                                              <form>
+                                                                <div class="checkbox">
+                                                                  <label><input type="checkbox" value="">Publicaciones relevantes</label>
+                                                                </div>
+                                                                <select class="form-control" id="sel1">
+                                                                  <option>Diariamente</option>
+                                                                  <option>Semanalmente</option>
+                                                                  <option>Periódicamente</option>
+                                                                </select>
+                                                                <div class="checkbox">
+                                                                  <label><input type="checkbox" value="">Actualizaciones sobre la repercusión de tus publicaciones</label>
+                                                                </div>
+                                                              </form>
+                                                            </div>
+
+                                                          </div><hr>
+
+                                                          <div class="panelNuev">
+                                                            <div class="panel-heading">Actualizaciones de la aplicación</div>
+                                                            <div class="panel-body">
+                                                              <p>Recibirás correos electrónicos con:</p>
+                                                              <form>
+                                                                <div class="checkbox">
+                                                                  <label><input type="checkbox" value="">Noticias sobre productos y actualizaciones de características de la aplicación</label>
+                                                                </div>
+                                                                <div class="checkbox">
+                                                                  <label><input type="checkbox" value="">Consejos para sacar el máximo partido de la aplicación</label>
+                                                                </div>
+                                                                <div class="checkbox">
+                                                                  <label><input type="checkbox" value="">Cosas que te perdiste desde tu última sesión</label>
+                                                                </div>
+                                                                <div class="checkbox">
+                                                                  <label><input type="checkbox" value="">Sugerencias de cuentas recomendadas</label>
+                                                                </div>
+                                                                <div class="checkbox">
+                                                                  <label><input type="checkbox" value="">Sugerencias basadas en tus seguimientos recientes</label>
+                                                                </div>
+                                                              </form>
+                                                            </div><hr>
+                                                            <button type="button" class="btn btn-success">Guardar cambios</button>
+                                                          </div>
+                                                        </div>
+                                                      </section>
+                                                      <section id="contraseña">
+                                                        <h2>Cambiar contraseña</h2>
+                                                        <div class="panel-group">
+                                                          <div class="panelNuev">
+                                                            <div class="panel-body">
+                                                              <div class="form-group">
+                                                                <label for="pwd">Contraseña actual:</label>
+                                                                <input type="password" class="form-control" id="pwd">
+                                                              </div>
+
+                                                              <div class="form-group">
+                                                                <label for="pwd">Nueva contraseña:</label>
+                                                                <input type="password" class="form-control" id="pwd">
+                                                              </div>
+
+                                                              <div class="form-group">
+                                                                <label for="pwd">Confirma nueva contraseña:</label>
+                                                                <input type="password" class="form-control" id="pwd">
+                                                              </div>
+
+
+                                                            </div><hr>
+
+                                                            <button type="button" class="btn btn-success">Guardar cambios</button>
+
+                                                          </div>
+                                                        </div>
+                                                        <button class="btn btn-primary fixedbutton" type="button" change="perfil">
+                                                          <span class="glyphicon glyphicon-menu-left x2"></span>
+                                                        </button>
+                                                      </section>
+
+                                                      <section id="editor">
+                                                        <div id="contenedorPrincipal">
+                                                          <div id="barraEdicion">
+                                                            <ul id="menu1">
+
+                                                              <li>
+                                                                <a href="#" >
+                                                                  <img src="img/deshacer.png" title="Deshacer"/> <br>
+                                                                  <p> Deshacer  </p>
+                                                                </a>
+                                                              </li>
+
+                                                              <li>
+                                                                <a href="#" >
+                                                                  <img src="img/rehacer.png" title="Rehacer"/> <br>
+                                                                  <p> Rehacer  </p>
+                                                                </a>
+                                                              </li>
+
+                                                              <li class="separacion">
+                                                                <a href="#" >
+                                                                  <img src="img/revertir.png" title="Revertir cambios"/> <br>
+                                                                  <p> Revertir</p>
+                                                                </a>
+                                                              </li>
+
+                                                              <li>
+                                                                <a href="#" >
+                                                                  <img src="img/brillo.png" title="Brillo"/> <br>
+                                                                  <p> Brillo  </p>
+                                                                </a>
+                                                              </li>
+
+                                                              <li>
+                                                                <a href="#" >
+                                                                  <img src="img/contraste.png" title="Contraste"/> <br>
+                                                                  <p> Contraste  </p>
+                                                                </a>
+                                                              </li>
+
+                                                              <li>
+                                                                <a href="#" >
+                                                                  <img src="img/rotar.png" title="Rotar"/> <br>
+                                                                  <p> Rotar  </p>
+                                                                </a>
+                                                              </li>
+
+                                                              <li>
+                                                                <a href="#" >
+                                                                  <img src="img/recortar.png" title="Recortar"/> <br>
+                                                                  <p> Recortar  </p>
+                                                                </a>
+                                                              </li>
+
+                                                              <li>
+                                                                <a href="#" >
+                                                                  <img src="img/efectos.png" title="Efectos"/> <br>
+                                                                  <p> Efectos  </p>
+                                                                </a>
+                                                              </li>
+
+                                                              <li>
+                                                                <a href="#" >
+                                                                  <img src="img/emoticonos.png" title="Emoticonos"/> <br>
+                                                                  <p> Emoticonos  </p>
+                                                                </a>
+                                                              </li>
+
+                                                              <li>
+                                                                <a href="#">
+                                                                  <img src="img/ruido.png" title="Ruido"/> <br>
+                                                                  <p> Ruido  </p>
+                                                                </a>
+                                                              </li>
+
+                                                              <li>
+                                                                <a href="#" >
+                                                                  <img src="img/texto.png" title="Texto"/> <br>
+                                                                  <p> Texto  </p>
+                                                                </a>
+                                                              </li>
+
+                                                              <li class="separacion">
+                                                                <a href="#" >
+                                                                  <img src="img/grabar.png" title="Grabar"/> <br>
+                                                                  <p> Grabar  </p>
+                                                                </a>
+                                                              </li>
+
+                                                            </ul>
+
+                                                          </div>
+
+                                                          <div id="publicar">
+                                                            <a href="#" class="botonEditor">Exportar</a>
+                                                            <a href="#" class="botonEditor">Publicar</a>
+                                                            <input type="text" placeholder="Escribe un titulo" id="tituloSubida">
+                                                          </div>
+
+                                                          <div id="video">
+                                                            <img src="img/subir.png"/>
+                                                            <h2> Arrastra & Suelta tu musica aqui</h2>
+                                                            <p> _____________ O selecciona un archivo _____________</p>
+                                                            <label for="image">
+                                                              <input type="file" name="image" id="image" style="display:none;"/>
+                                                              Buscar musica
+                                                            </label>
+                                                          </div>
+
+                                                          <div id="misSubidas">
+                                                            <h2> <img src="img/notaMusical.png"/> Mis subidas <img src="img/notaMusical.png"/> </h2>
+                                                            <video src="static/musica2.webm" class="contenidoInterno" controls autoplay muted loop draggable="true" ></video>
+                                                            <video src="static/musica1.webm" class="contenidoInterno" controls autoplay muted loop draggable="true" ></video>
+                                                            <video src="static/musica2.webm" class="contenidoInterno" controls autoplay muted loop draggable="true" ></video>
+                                                            <br>
+                                                            <label for="image">
+                                                              <input type="file" name="image" id="image" style="display:none;"/>
+                                                              <img src="img/anade.png"/>
+                                                              <p> Sube tus nuevas creaciones </p>
+                                                            </label>
+                                                          </div>
+
+                                                          <div id="lineaTiempo">
+                                                            <table border="1">
+                                                              <tr>
+                                                                <td></td>
+                                                                <th><pre>00:00:00       00:00:05       00:00:10       00:00:15       00:00:20       00:00:25       00:00:30       00:00:35       00:00:40       00:00:45       00:00:50          </pre>
+                                                                  <pre>|___|___|___|___|___|___|___|___|___|___|___|___|___|___<b>|</b>___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|</pre>
+                                                                </th>
+                                                              </tr>
+
+                                                              <tr>
+                                                                <td><img src="img/video.png" width="30px" height="30px"/></td>
+                                                                <td><img src="img/cinta video.png" class="videoLineaTiempo"/></td>
+                                                              </tr>
+
+                                                              <tr>
+                                                                <td><img src="img/imagen.png" width="30px" height="30px"/></td>
+                                                                <td>
+                                                                  <img src="img/imag1.png" class="imagenLineaTiempo"/>
+                                                                  <img src="img/imag2.png" class="imagenLineaTiempo"/>
+                                                                  <img src="img/imag3.png" class="imagenLineaTiempo"/>
+                                                                  <img src="img/imag4.png" class="imagenLineaTiempo"/>
+                                                                  <img src="img/imag5.png" class="imagenLineaTiempo"/>
+                                                                  <img src="img/imag6.png" class="imagenLineaTiempo"/>
+                                                                  <img src="img/imag7.png" class="imagenLineaTiempo"/>
+
+                                                                </td>
+                                                              </tr>
+
+                                                              <tr>
+                                                                <td><img src="img/texto2.png" width="30px" height="25px"/></td>
+                                                                <td></td>
+                                                              </tr>
+
+                                                              <tr>
+                                                                <td><img src="img/musica.png" width="30px" height="30px"/></td>
+                                                                <td>
+                                                                  <img src="img/cinta musica 1.png" class="musicaLineaTiempo"/>
+                                                                  <img src="img/cinta musica 2.png" class="musicaLineaTiempo"/>
+                                                                </td>
+                                                              </tr>
+                                                            </table>
+                                                          </div>
+
+                                                        </div>
+                                                      </section>
+                                                      <section id="Selena">
+
+                                                        <div class="panel-group">
+                                                          <div class="panelGen" border>
+                                                            <div class="panel-heading">
+                                                              <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Selena_Gomez_-_Walmart_Soundcheck_Concert.jpg/492px-Selena_Gomez_-_Walmart_Soundcheck_Concert.jpg" class="img-circle" alt="profile pic" width="50" height="50">
+                                                                Selena Gomez</h1>
+                                                              </div>
+                                                              <div class="panel-body">
+                                                                <div class="row">
+                                                                  <div class="col-sm-1 col-md-1 col-md-offset-1 ima ">
+                                                                    10:15 20/6/2017
+                                                                  </div>
+                                                                  <div class="col-sm-6 col-md-6 ima yo">
+                                                                    Que tal guapi
+                                                                  </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                  <div class="col-sm-6 col-md-6 col-md-offset-4 ima selena">
+                                                                    Todo bien, tú?
+                                                                  </div>
+                                                                  <div class="col-sm-1 col-md-1 ima ">
+                                                                    10:21 20/6/2017
+                                                                  </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                  <div class="col-sm-1 col-md-1 col-md-offset-1 ima ">
+                                                                    10:53 20/6/2017
+                                                                  </div>
+                                                                  <div class="col-sm-6 col-md-6 ima yo">
+                                                                    A ver si saco nuevo disco
+                                                                  </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                  <div class="col-sm-6 col-md-6 col-md-offset-4 ima selena">
+                                                                    A ver si es verdad
+                                                                  </div>
+                                                                  <div class="col-sm-1 col-md-1 ima ">
+                                                                    12:17 20/6/2017
+                                                                  </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                  <div class="col-sm-1 col-md-1 col-md-offset-1 ima ">
+                                                                    13:14 20/6/2017
+                                                                  </div>
+                                                                  <div class="col-sm-6 col-md-6 ima yo">
+                                                                    Espera sentao
+                                                                  </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                  <div class="col-sm-6 col-md-6 col-md-offset-2 ima">
+                                                                    <input type="text" class="form-control mensaje" placeholder="Escribe aquí tu mensaje."></input>
+                                                                  </div>
+                                                                  <div class="col-sm-2 col-md-2 ima">
+                                                                    <input class="btn btn-default btn-block" value="Enviar"></input>
+                                                                  </div>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                            <button class="btn btn-primary fixedbutton" type="button" change="mensajes">
+                                                              <span class="glyphicon glyphicon-menu-left x2"></span>
+                                                            </button>
+                                                          </section>
+                                                        </main>
+                                                      </div>
+                                                    </body>
+                                                    </html>

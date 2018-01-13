@@ -3,6 +3,11 @@ $(document).ready(function () {
         $('#sidebar').toggleClass('active');
         $(this).toggleClass('active');
     });
+    $('#ssp').hide();
+    $('#search-button').click(function(e){
+    e.preventDefault();
+    $('#ssp').show();
+    });
     $('#principal').show();
     $('[change]').click(function(){
      	$('section').each(function(){
