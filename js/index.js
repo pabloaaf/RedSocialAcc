@@ -6,7 +6,7 @@ $(document).ready(function () {
     $('#ssp').hide();
     $('#search-button').click(function(e){
     e.preventDefault();
-    $('#ssp').show();
+    $('#ssp').toggle();
     });
     $('#principal').show();
     $('[change]').click(function(){
