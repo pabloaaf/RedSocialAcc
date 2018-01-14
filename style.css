@@ -139,7 +139,7 @@ body
 	transform: translate(-50%, -50%);
 	transition: .5s;
 	width: 390px;
-	height: 620px;
+	height: 500px;
 	padding: 80px 40px;
 	box-sizing: border-box;
 	background: rgba(0,0,0,.6);
