@@ -1,9 +1,26 @@
+.tendenciasPad{
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
 .navbar {
     padding: 15px 10px;
     background: #F2F2F2;
     border: none;
     border-radius: 0;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.btn-success{
+	color: black;
+    border-color:#00d9a4 !important;
+    background-color:#00d9a4 !important;
+}
+
+.btn-success:hover{
+	color: black;
+	border-color:#FF40BF !important;
+    background-color:#FF40BF !important;
 }
 
 .navbar-btn {
@@ -21,7 +38,7 @@
 #sidebar {
     min-width: 250px;
     max-width: 250px;
-    background: #77dd77 /*rgba(100,255,100,1)*/;
+    background: #3D9983 /*rgba(100,255,100,1)*/;
     /*color: #fff;*/
     transition: all 0.6s cubic-bezier(0.945, 0.020, 0.270, 0.665);
     transform-origin: bottom left;
@@ -34,7 +51,7 @@
 
 #sidebar .sidebar-header {
     padding: 20px;
-    background: #98fb98/*#98fb98*/;
+    background: #00d9a4/*#98fb98*/;
 }
 
 #sidebar ul.components {
@@ -52,13 +69,17 @@
     display: block;
 }
 #sidebar ul li a:hover {
-    color:#00A961; /* #98fb98;*/
-    background: #fff;
+    background: #00d9a4;
 }
+
+#sidebar div ul li a:hover {
+    background: #FF40BF;
+}
+
 
 #sidebar ul li.active > a, a[aria-expanded="true"] {
     /*color: #fff;*/
-    background: #98fb98;
+    background: #3D9983;
 }
 
 #content {
@@ -70,7 +91,7 @@
 #sidebarCollapse {
     width: 40px;
     height: 40px;
-    background: #F2F2F2;
+    background: #00d9a4;
 }
 
 #sidebarCollapse span {

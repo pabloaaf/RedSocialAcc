@@ -10,10 +10,10 @@ $(document).ready(function () {
     });
     $('#principal').show();
     $('[change]').click(function(){
-     	$('section').each(function(){
-			$(this).hide();
-		});
-		$('#'+$(this).attr('change')).show();
+      $('section').each(function(){
+      $(this).hide();
+    });
+    $('#'+$(this).attr('change')).show();
     });
     $('#mens').addClass("active");
     $("#panelNuev").hide();

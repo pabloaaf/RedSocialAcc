@@ -28,146 +28,95 @@
   <div class="wrapper">
     <nav id="sidebar">
       <div class="sidebar-header">
-        <a change="principal"><img src="4_Grayscale_logo_on_transparent_221x66.png" width="200" height="62" class="user"></a>
+        <a change="principal"><img src="./photo/4_Grayscale_logo_on_transparent_221x66.png" width="200" height="62" class="user"></a>
       </div>
       <ul class="list-unstyled components">
         <li>
-          <a change="principal"><i class="glyphicon glyphicon-music"></i>  Principal</a>
+          <a change="buscar" style="color:white;"><i class="glyphicon glyphicon-search"></i>  Buscar</a>
         </li>
         <li>
-          <a change="buscar"><i class="glyphicon glyphicon-search"></i>  Buscar</a>
-        </li>
-        <li>
-          <a change="recomendados"><i class="glyphicon glyphicon-star"></i>   Recomendados</a>
+          <a change="recomendados" style="color:white;"><i class="glyphicon glyphicon-star"></i>   Recomendados</a>
         </li>
       </ul>
       <br>
-      <div class="container-fluid">
-        <ul class="nav nav-pills nav-justified">
-          <h4 style="text-align:center;">TENDENCIAS</h4>
-          <li class="active"><a data-toggle="tab" href="#t-pr" change="tendencias">Profesional</a></li>
-          <li><a data-toggle="tab" href="#t-am" change="tendencias2">Amateur</a></li>
+      <div class="container-fluid tendenciasPad" id="tend" style="margin: 5px; border-style:solid; border-color:#00D9A4;">
+        <ul class="nav nav-pills nav-justified" id="tend">
+          <h4 style="text-align:center; color:white;">TENDENCIAS</h4>
+          <li class="active" ><a id="top" data-toggle="tab" href="#t-pr" change="tendencias" style="border-style: solid;border-color:#00D9A4; margin-right: 2px;">Profesional</a></li>
+          <li><a id="noob" data-toggle="tab" href="#t-am" change="tendencias2" style="border-style: solid;border-color:#00D9A4;">Amateur</a></li>
         </ul>
 
-        <div class="tab-content text-center" style="margin-top:20px;">
-          <div id="t-pr" class="tab-pane fade in active" style="background-color:#00d9a4">
-            <div class="panel panel-info">
-              
+
+
+          <div class="tab-content text-center" style="margin-top:20px;">
+            <div id="t-pr" class="tab-pane fade in active">            
               <div class="panel panel-default">
-                <div class="panel-body">
+                <div class="panel-body" style="background-color:#00d9a4">
                   <div class="row">
-                      <div class="col-xs-6 col-md-4" style="text-align:right;">#1</div>
-                      <div class="col-xs-12 col-md-8">It Ain't Me</div>
-                      
+                      <div class="col-xs-6 col-md-4" ><h2 style="margin-top: 0px;">#1</h2></div>
+                      <div class="col-xs-12 col-md-8">It Ain't Me <br> Selena Gómez</div>
                   </div>
-                
-                <small>Selena Gómez</small>
-              </div>
-              </div>
-              <div class="panel panel-default">
-                <div class="panel-body">
-                  <div class="row">
-                      <div class="col-xs-6 col-md-4" style="text-align:right;">#2</div>
-                      <div class="col-xs-12 col-md-8">Look What You Made Me Do</div>
-                      
-                  </div>
-                  <small>Taylor Swift</small>
                 </div>
               </div>
               <div class="panel panel-default">
-                <div class="panel-body">
+                <div class="panel-body" style="background-color:#00d9a4">
                   <div class="row">
-                      <div class="col-xs-6 col-md-4" style="text-align:right;">#3</div>
-                      <div class="col-xs-12 col-md-8">Deep Blue Sea</div>
-                      
+                      <div class="col-xs-6 col-md-4" ><h2 style="margin-top: 0px;">#2</h2></div>
+                      <div class="col-xs-12 col-md-8">Deep Blue Sea<br> Ed Sheeran</div>
                   </div>
-                  <small>Ed Sheeran</small>
                 </div>
-                
               </div>
               <div class="panel panel-default">
-                <div class="panel-body">
+                <div class="panel-body" style="background-color:#00d9a4">
                   <div class="row">
-                      <div class="col-xs-6 col-md-4" style="text-align:right;">#4</div>
-                      <div class="col-xs-12 col-md-8">Wolves</div>
-                      
+                      <div class="col-xs-6 col-md-4" ><h2 style="margin-top: 0px;">#3</h2></div>
+                      <div class="col-xs-12 col-md-8">Wolves <br> Selena Gómez</div>
                   </div>
-                  <small>Selena Gómez</small>
                 </div>
-                <small>Wolves</small>
               </div>
               <div class="panel panel-default">
-                <div class="panel-body">
+                <div class="panel-body" style="background-color:#00d9a4">
                   <div class="row">
-                      <div class="col-xs-6 col-md-4" style="text-align:right;">#5</div>
-                      <div class="col-xs-12 col-md-8">Into You</div>
-                      
+                      <div class="col-xs-6 col-md-4" ><h2 style="margin-top: 0px;">#4</h2></div>
+                      <div class="col-xs-12 col-md-8">Into You <br> Ariana Grande</div>
                   </div>
-                  <small>Ariana Grande</small>
                 </div>
-                
               </div>
             </div>
-          </div>
-          <div id="t-am" class="tab-pane fade">
-            <div class="panel panel-info">
-              
+          <div id="t-am" class="tab-pane fade">  
               <div class="panel panel-default">
-                <div class="panel-body">
+                <div class="panel-body" style="background-color:#00d9a4">
                   <div class="row">
-                      <div class="col-xs-6 col-md-4" style="text-align:right;">#1</div>
-                      <div class="col-xs-12 col-md-8">You Know</div>
-                      
+                      <div class="col-xs-6 col-md-4" ><h2 style="margin-top: 0px;">#1</h2></div>
+                      <div class="col-xs-12 col-md-8">You Know <br> Nexmark</div>
                   </div>
-                  <small>Nexmark </small>
                 </div>
-                
               </div>
               <div class="panel panel-default">
-                <div class="panel-body">
+                <div class="panel-body" style="background-color:#00d9a4">
                   <div class="row">
-                      <div class="col-xs-6 col-md-4" style="text-align:right;">#2</div>
-                      <div class="col-xs-12 col-md-8">Voltage </div>
-                      
+                      <div class="col-xs-6 col-md-4" ><h2 style="margin-top: 0px;">#2</h2></div>
+                      <div class="col-xs-12 col-md-8">Voltage<br> Arc North</div>
                   </div>
-                  <small>Arc North</small>
                 </div>
-                
               </div>
               <div class="panel panel-default">
-                <div class="panel-body">
+                <div class="panel-body" style="background-color:#00d9a4">
                   <div class="row">
-                      <div class="col-xs-6 col-md-4" style="text-align:right;">#3</div>
-                      <div class="col-xs-12 col-md-8">Saying Goodbye</div>
-                      
+                      <div class="col-xs-6 col-md-4" ><h2 style="margin-top: 0px;">#3</h2></div>
+                      <div class="col-xs-12 col-md-8">Saying Goodbye <br> Hize</div>
                   </div>
-                  <small>Hize</small>
                 </div>
-                
               </div>
               <div class="panel panel-default">
-               <div class="panel-body">
+                <div class="panel-body" style="background-color:#00d9a4">
                   <div class="row">
-                      <div class="col-xs-6 col-md-4" style="text-align:right;">#4</div>
-                      <div class="col-xs-12 col-md-8">Don't Let Me Go</div>
-                      
+                      <div class="col-xs-6 col-md-4" ><h2 style="margin-top: 0px;">#4</h2></div>
+                      <div class="col-xs-12 col-md-8">Don't Let Me Go <br> Loreno Mayer</div>
                   </div>
-                  <small>Loreno Mayer</small>
                 </div>
-                
               </div>
-              <div class="panel panel-default">
-                <div class="panel-body">
-                  <div class="row">
-                      <div class="col-xs-6 col-md-4" style="text-align:right;">#5</div>
-                      <div class="col-xs-12 col-md-8">Right Now</div>
-                      
-                  </div>
-                  <small>Oddities </small>
-                </div>
-                
-              </div>
-            </div>
+            </div>        
           </div>
         </div>
       </nav>
@@ -186,17 +135,17 @@
             <div class="collapse navbar-collapse">
               <ul class="nav navbar-nav navbar-right">
                 <li>
-                  <a change="editor" onclick="abrirEditar();">
+                  <a change="editor" style="color:white;">
                     <i class="glyphicon glyphicon-plus"></i> Nuevo Post
                   </a>
                 </li>
                 <li>
-                  <a change="mensajes" >
+                  <a change="mensajes" style="color:white;">
                     <i class="glyphicon glyphicon-envelope"></i> Mis mensajes
                   </a>
                 </li>
                 <li>
-                  <a change="perfil">
+                  <a change="perfil" style="color:white;">
                     <i class="glyphicon glyphicon-user"></i> Selena Gómez
                   </a>
                 </li>
@@ -207,6 +156,29 @@
 
         <section id="principal">
           <div class="panel-group">
+
+            <div class="panel panel-default">
+                <div class="panel-body">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <video class="embed-responsive-item" controls>
+                      <source src="static/agrande.mp4" type="video/mp4">
+                      </video>
+                    </div>
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-xs-16 col-sm-9">
+                          <h3>Ariana Grande - Into You</h3>
+                          <p><i class="glyphicon glyphicon-eye-open"></i>  200000</p>
+                        </div>
+                        <div class="col-xs-6 col-sm-3" style="text-align:right;">
+                          <h4>Ariana Grande <i class="glyphicon glyphicon-user"></i></h4>
+                          <p>12/4/2017 <i class="glyphicon glyphicon-time"></i></p>
+                          <button type="button" class="btn btn-success"><i class="glyphicon glyphicon-thumbs-up"></i> 1700</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
             <div class="panel panel-default">
                             <div class="panel-body">
@@ -242,7 +214,7 @@
                         <p><i class="glyphicon glyphicon-eye-open"></i>  19000</p>
                       </div>
                       <div class="col-xs-6 col-sm-3" style="text-align:right;">
-                        <h4>Taylor Swift <i class="glyphicon glyphicon-user"></i></h4>
+                        <h4>Jonas Blue <i class="glyphicon glyphicon-user"></i></h4>
                         <p>24/10/2017 <i class="glyphicon glyphicon-time"></i></p>
                         <button type="button" class="btn btn-success"><i class="glyphicon glyphicon-thumbs-up"></i> 36700</button>
                       </div>
@@ -276,28 +248,7 @@
                 </div>
               </div>
 
-              <div class="panel panel-default">
-                <div class="panel-body">
-                  <div class="embed-responsive embed-responsive-16by9">
-                    <video class="embed-responsive-item" controls>
-                      <source src="static/agrande.mp4" type="video/mp4">
-                      </video>
-                    </div>
-                    <div class="container-fluid">
-                      <div class="row">
-                        <div class="col-xs-16 col-sm-9">
-                          <h3>Ariana Grande - Into You</h3>
-                          <p><i class="glyphicon glyphicon-eye-open"></i>  200000</p>
-                        </div>
-                        <div class="col-xs-6 col-sm-3" style="text-align:right;">
-                          <h4>Ariana Grande <i class="glyphicon glyphicon-user"></i></h4>
-                          <p>12/4/2017 <i class="glyphicon glyphicon-time"></i></p>
-                          <button type="button" class="btn btn-success"><i class="glyphicon glyphicon-thumbs-up"></i> 1700</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              
 
                 
 
@@ -626,7 +577,7 @@
                                                                         </div>
                                                                       </div>
 
-                                                                      <nav class="navbar" role="navigation">
+                                                                      <nav class="navbar navbar-default" role="navigation">
                                                                         <div>
                                                                           <ul class="nav navbar-nav">
                                                                             <li class="active"><a href="#" id="clickpubli"><span class="badge">2</span>Publicaciones</a></li>
@@ -647,7 +598,7 @@
                                                               <div class="row">
                                                           <div class="col-xs-6 col-md-4"></div>
                                                           <div class="col-xs-6 col-md-4"><h2 style="text-align:center;">Mis mensajes</h2></div>
-                                                          <div class="col-xs-6 col-md-4"><p style="text-align:right; margin-top:10px;"><a change="nuevMensaje" class="btn btn-lg btn-success"> Nuevo mensaje</a></p></div>
+                                                          <div class="col-xs-6 col-md-4"><p style="text-align:right; margin-top:10px; color:white;"><a change="nuevMensaje" class="btn btn-success btn-lg" style="background-color:#00d9a4"> Nuevo mensaje</a></p></div>
                                                         </div>
                                                               
                                                               <div class="panel-group" style="overflow-y:scroll;">
@@ -998,7 +949,7 @@
                                                         <div class="row">
                                                           <div class="col-xs-6 col-md-4"></div>
                                                           <div class="col-xs-6 col-md-4"><h2 style="text-align:center;">Editar Perfil</h2></div>
-                                                          <div class="col-xs-6 col-md-4"><p style="text-align:right; margin-top:10px;"><a change="perfil" class="btn btn-lg btn-success"><span class="glyphicon glyphicon-arrow-left"></span> Volver al Perfil</a></p></div>
+                                                          <div class="col-xs-6 col-md-4"><p style="text-align:right; margin-top:10px; color:white;"><a change="perfil" class="btn btn-success btn-lg" style="background-color:#00d9a4"><span class="glyphicon glyphicon-arrow-left"></span> Volver al Perfil</a></p></div>
                                                         </div>
                                                         
                                                         <hr>
@@ -1163,20 +1114,18 @@
                                                           </div>
 
                                                         </div>
-                                                        <button class="btn btn-primary fixedbutton" type="button" change="perfil">
-                                                          <span class="glyphicon glyphicon-menu-left x2"></span>
-                                                        </button>
+                                                       
                                                       </section>
                                                       <section id="suscripcion">
                                                         <div class="row">
                                                           <div class="col-xs-6 col-md-4"></div>
                                                           <div class="col-xs-6 col-md-4"><h2 style="text-align:center;">Suscripción</h2></div>
-                                                          <div class="col-xs-6 col-md-4"><p style="text-align:right; margin-top:10px;"><a change="perfil" class="btn btn-lg btn-success"><span class="glyphicon glyphicon-arrow-left"></span> Volver al Perfil</a></p></div>
+                                                          <div class="col-xs-6 col-md-4"><p style="text-align:right; margin-top:10px;color:white;"><a change="perfil" class="btn btn-success btn-lg" style="background-color:#00d9a4"><span class="glyphicon glyphicon-arrow-left"></span> Volver al Perfil</a></p></div>
                                                         </div>
                                                         
                                                         <div class="panel-group">
                                                           <div class="panelNuev">
-                                                            <div class="panel-heading">Actividad relacionada contigo y tus publicaciones</div>
+                                                            <div class="panel-heading">Actividad relacionada contigo y tus publicaciones:</div>
                                                             <div class="panel-body">
 
                                                               <p>Enviarme un correo electrónico cuando:</p>
@@ -1243,7 +1192,7 @@
                                                         <div class="row">
                                                           <div class="col-xs-6 col-md-4"></div>
                                                           <div class="col-xs-6 col-md-4"><h2 style="text-align:center;">Cambiar contraseña</h2></div>
-                                                          <div class="col-xs-6 col-md-4"><p style="text-align:right; margin-top:10px;"><a change="perfil" class="btn btn-lg btn-success"><span class="glyphicon glyphicon-arrow-left"></span> Volver al Perfil</a></p></div>
+                                                          <div class="col-xs-6 col-md-4"><p style="text-align:right; margin-top:10px;"><a change="perfil" class="btn btn-success btn-lg btn-success"><span class="glyphicon glyphicon-arrow-left"></span> Volver al Perfil</a></p></div>
                                                         </div>
                                                     
                                                         <div class="panel-group">
@@ -1272,11 +1221,12 @@
                                                           </div>
                                                         </div>
                                                         <button class="btn btn-primary fixedbutton" type="button" change="perfil">
-                                                          <span class="glyphicon glyphicon-menu-left x2"></span>
+                                                         
                                                         </button>
                                                       </section>
 
                                                       <section id="editor">
+                                                        
                                                         <div id="contenedorPrincipal">
                                                           <div id="barraEdicion">
                                                             <ul id="menu1">
@@ -1358,7 +1308,7 @@
                                                                 </a>
                                                               </li>
 
-                                                              <li class="separacion">
+                                                             <li class="separacion">
                                                                 <a href="#" >
                                                                   <img src="img/grabar.png" title="Grabar"/> <br>
                                                                   <p> Grabar  </p>
@@ -1465,7 +1415,7 @@
                                                               <div class="row">
                                                                 <div class="col-xs-6"><h1><img src="http://78.media.tumblr.com/592f5ee94aec5532eb46d7528d40019c/tumblr_inline_mj7z33QVJx1qz4rgp.png" class="img-circle" alt="profile pic" width="50" height="50">
                                                                 Cara Delevigne</h1></div>
-                                                                <div class="col-xs-6"><p style="text-align:right; margin-top:25px;"><a change="mensajes" class="btn btn-lg btn-success"><span class="glyphicon glyphicon-arrow-left"></span> Volver a Mis Mensajes</a></p></div>
+                                                                <div class="col-xs-6"><p style="text-align:right; margin-top:25px;"><a change="mensajes" class="btn btn-success btn-lg" style="background-color:#00d9a4;color:white;"><span class="glyphicon glyphicon-arrow-left"></span> Volver a Mis Mensajes</a></p></div>
                                                               </div>
                                                               
                                                                 
@@ -1517,14 +1467,12 @@
                                                                     <input type="text" class="form-control mensaje" placeholder="Escribe aquí tu mensaje."></input>
                                                                   </div>
                                                                   <div class="col-sm-2 col-md-2 ima">
-                                                                    <input class="btn btn-default btn-block" value="Enviar"></input>
+                                                                    <input class="btn btn-success btn-block" value="Enviar"></input>
                                                                   </div>
                                                                 </div>
                                                               </div>
                                                             </div>
-                                                            <button class="btn btn-primary fixedbutton" type="button" change="mensajes">
-                                                              <span class="glyphicon glyphicon-menu-left x2"></span>
-                                                            </button>
+                                                            
                                                           </section>
                                                         </main>
                                                       </div>
