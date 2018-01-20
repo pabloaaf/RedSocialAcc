@@ -12,15 +12,15 @@
 }
 
 .btn-success{
-	color: black;
-    border-color:#00d9a4 !important;
-    background-color:#00d9a4 !important;
+	color: white;
+    border-color:#3D9983 !important;
+    background-color:#3D9983 !important;
 }
 
 .btn-success:hover{
 	color: black;
-	border-color:#FF40BF !important;
-    background-color:#FF40BF !important;
+	border-color:#00d9a4 !important;
+    background-color:#00d9a4 !important;
 }
 
 .navbar-btn {
@@ -73,7 +73,7 @@
 }
 
 #sidebar div ul li a:hover {
-    background: #FF40BF;
+    background: #00d9a4;
 }
 
 
