@@ -1,0 +1,224 @@
+@charset "utf-8";
+
+#editor{
+	width:100% !important;
+	height:80% !important;
+}
+
+#contenedorPrincipal{
+	width:100% !important;
+	height:100% !important;
+	padding:0.5%;
+}
+
+#barraEdicion,#video,#misSubidas,#publicar,#lineaTiempo{
+	border-radius:5px !important;
+}
+
+#barraEdicion{
+	width:60% !important;
+	height:10% !important;
+	background-color:#F2F2F2;
+	float:left;
+	border-top-right-radius:0px !important;
+	border-bottom-right-radius:0px !important;
+	border:2px solid #0F3244;
+	border-right:0px;
+}
+
+#barraEdicion > ul{
+	margin:0 !important;
+	padding:0 !important;
+}
+
+#menu1 > li{ 
+	list-style: none !important;
+	float:left;
+	text-align:center;
+	padding-left:10px;
+	padding-top:5px;
+}
+
+#barraEdicion > ul > li > a{
+	text-decoration:none;
+	color:#224570;
+	font-weight:bold;
+	font-size:8px;
+}
+
+#barraEdicion > ul > li:hover, .barraEdicion > li:focus{
+	border-bottom:1px solid #0F3244;
+}
+
+#publicar{
+	width:40% !important;
+	height:10% !important;
+	float:left;
+	background-color:#F2F2F2;
+	text-align:center;
+	border-top-left-radius:0px !important;
+	border-bottom-left-radius:0px !important;
+	border:2px solid #0F3244;
+	border-left:0px;
+}
+
+#tituloSubida{
+	display:block;
+	float:right;
+	width:30% !important;
+	height:50% !important;
+	margin-right:2%;
+	margin-top:3%;
+	border-radius:5px;
+	border:3px solid #224570;
+}
+
+.botonEditor {
+	display:block;
+	float:right;
+	width:25% !important;
+	height:50% !important;
+	background-color:#224570; 
+	color: #ffffff;
+	text-decoration: none;
+	font-size:14px;
+	font-weight:bold;
+	margin-right:1%;
+	margin-top:3%;
+	text-align:center;
+	border-radius:10px;
+}
+
+.botonEditor:hover,  .botonEditor:focus{
+	color:#ffffff;
+}
+
+#video{
+	width:53% !important;
+	height:55% !important;
+	float:left;
+	text-align:center;
+	background-color:#0F3244;
+	color:#D5DDE3;
+	border-top-right-radius:0px !important;
+}
+
+#video > img{
+	padding-top:5%;
+}
+
+#video > h2{
+	font-size:18px;
+}
+
+#video > p{
+	padding-top:1%;
+	padding-bottom:1%;
+	font-size:12px;
+}
+
+#video > label{
+	background-color:#D5DDE3;
+	border:2px solid black;
+	background-image:url(../img/anade2.png);
+	background-repeat:no-repeat;
+	color:#224570;
+	font-size:14px;
+	font-weight:bold;
+	padding:5px;
+	padding-left:30px;
+	border-radius:5px;
+	cursor:pointer;
+}	
+
+#misSubidas{
+	width:47% !important;
+	height:55% !important;
+	float:left;
+	overflow: auto;
+	background-color:#F2F2F2;
+	text-align:center;
+	color:#224570;
+	font-weight:bold;
+	border:2px solid #0F3244;
+	border-top:0px;
+}
+
+#misSubidas > h2{
+	color:#224570;
+	padding-top:1%;
+	font-size:18px;
+	font-weight:bold;
+}
+
+
+.contenidoInterno{
+	width: 30% !important;
+	height:43% !important;
+}
+
+#misSubidas > label{
+	cursor:pointer;
+}
+
+#misSubidas > video:hover{
+	-webkit-transform:scale(1);
+	-moz-transform:scale(1.5);
+	-ms-transform:scale(1.5);
+	-o-transform:scale(1.5);
+	transform:scale(1.2);
+}
+
+#lineaTiempo *{
+	margin:0 !important;
+	padding:0 !important;
+}
+
+#lineaTiempo{
+	width:100% !important;
+	height:33% !important;
+	float:left;
+	text-align:center;
+	margin-top:0.5%;
+	overflow:hidden;
+}
+
+#lineaTiempo b{
+	color:#F00;
+}
+			
+#lineaTiempo table{
+	background-color:#0F3244;
+	border-color:#D5DDE3;
+	width:100% !important;
+	height:100% !important;
+	overflow:hidden;
+	margin:0 !important;
+	padding:0 !important;
+}
+
+#lineaTiempo pre{
+	background-color:#0F3244;
+	border:0;
+}
+
+#lineaTiempo table th,pre{
+	color:#D5DDE3;
+	font-weight:inherit;
+}
+
+.videoLineaTiempo{
+	width:20% !important;
+	height:25% !important;
+	float:left;
+}
+
+.imagenLineaTiempo{
+	width:5% !important;
+	height:15% !important;
+}
+
+.musicaLineaTiempo{
+	width:48% !important;
+	height:25% !important;
+}

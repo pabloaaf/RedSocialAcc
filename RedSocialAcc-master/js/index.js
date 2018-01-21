@@ -1,0 +1,46 @@
+$(document).ready(function () {
+    $('#sidebarCollapse').click(function () {
+        $('#sidebar').toggleClass('active');
+        $(this).toggleClass('active');
+    });
+    $('#ssp').hide();
+    $('#search-button').click(function(e){
+    e.preventDefault();
+    $('#ssp').toggle();
+    });
+    $('#principal').show();
+    $('[change]').click(function(){
+      $('section').each(function(){
+      $(this).hide();
+    });
+    $('#'+$(this).attr('change')).show();
+    });
+    $('#mens').addClass("active");
+    $("#panelNuev").hide();
+    $("#nuevo").click(function(){
+      $("#panelNuev").show();
+      $("#panelGen").hide();
+    });
+    $("#enviar").click(function(){
+      $("#panelNuev").hide();
+      $("#panelGen").show();
+    });
+    $("#public").show();
+    $("#sig").hide();
+    $("#seg").hide();
+    $("#clickpubli").click(function(){
+      $("#public").show();
+      $("#sig").hide();
+      $("#seg").hide();
+    });
+    $("#clicksig").click(function(){
+      $("#public").hide();
+      $("#sig").show();
+      $("#seg").hide();
+    });
+    $("#clickseg").click(function(){
+      $("#public").hide();
+      $("#sig").hide();
+      $("#seg").show();
+    });
+});

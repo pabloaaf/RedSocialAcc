@@ -1,0 +1,32 @@
+main{
+	width: 100%;
+}
+
+.fixedbutton {
+		position: sticky;
+		bottom: 15px;
+		float: right;
+        border-radius: 50% !important;
+}
+
+.x2{
+	font-size: 1.5em;
+}
+section{
+	display: none;
+}
+
+.postData{
+	text-align: right;
+}
+section > h2 {
+	text-align: center;
+}
+
+.navbar-nav > li > a{
+	padding-right: 30px;
+}
+
+.navbar{
+	padding: 15px;
+}
